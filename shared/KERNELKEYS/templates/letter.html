@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kernel Keys - Letter Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #0A0A0A;
+            background: white;
+            padding: 1in;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        
+        .letterhead {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #00D4AA;
+        }
+        
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+        
+        .logo-container img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .company-info {
+            color: #71717A;
+            font-size: 9pt;
+            line-height: 1.8;
+        }
+        
+        .company-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 24pt;
+            font-weight: 700;
+            color: #0A0A0A;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company-name .accent {
+            color: #00D4AA;
+        }
+        
+        .date-field {
+            margin: 1.5rem 0;
+            color: #71717A;
+        }
+        
+        .recipient {
+            margin: 1.5rem 0;
+        }
+        
+        .recipient strong {
+            color: #0A0A0A;
+        }
+        
+        .content {
+            margin: 2rem 0;
+            min-height: 4in;
+        }
+        
+        .signature {
+            margin-top: 2rem;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #E4E4E7;
+            width: 300px;
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .signature-name {
+            font-weight: 600;
+            color: #0A0A0A;
+        }
+        
+        .signature-title {
+            font-size: 9pt;
+            color: #71717A;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0.75in;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            @page {
+                margin: 0.75in;
+            }
+        }
+        
+        /* Edit mode styles */
+        .editable {
+            border-bottom: 1px dashed #E4E4E7;
+            min-width: 200px;
+            display: inline-block;
+            padding: 2px 4px;
+        }
+        
+        .editable:focus {
+            outline: 2px solid #00D4AA;
+            outline-offset: 2px;
+            border-bottom-color: #00D4AA;
+        }
+        
+        .instructions {
+            background: #F5F5F5;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid #00D4AA;
+            font-size: 9pt;
+            color: #71717A;
+        }
+        
+        .instructions strong {
+            color: #0A0A0A;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions no-print">
+        <strong>Instructions:</strong> Click on fields marked with dashed lines to edit. Use browser print (Cmd/Ctrl+P) to save as PDF.
+    </div>
+    
+    <div class="letterhead">
+        <div class="logo-container">
+            <img src="../../assets/logo_neural_key.png" alt="Kernel Keys Logo" id="logo-img">
+        </div>
+        <div class="company-name">
+            Kernel<span class="accent">Keys</span>
+        </div>
+        <div class="company-info">
+            <div>Kernel Keys LLC</div>
+            <div>New York, NY, USA</div>
+            <div>david@kernel-keys.com</div>
+            <div>kernel-keys.com</div>
+        </div>
+    </div>
+    
+    <div class="date-field">
+        <span contenteditable="true" class="editable" id="date-field">[Date]</span>
+    </div>
+    
+    <div class="recipient">
+        <div><strong contenteditable="true" class="editable" id="recipient-name">[Recipient Name]</strong></div>
+        <div contenteditable="true" class="editable" id="recipient-title">[Title]</div>
+        <div contenteditable="true" class="editable" id="recipient-company">[Company]</div>
+        <div contenteditable="true" class="editable" id="recipient-address">[Address]</div>
+    </div>
+    
+    <div class="content">
+        <p>Dear <span contenteditable="true" class="editable" id="salutation">[Name]</span>,</p>
+        
+        <p style="margin-top: 1rem;" contenteditable="true" id="body-text">
+            [Letter content goes here. This field is fully editable.]
+        </p>
+        
+        <p style="margin-top: 1rem;" contenteditable="true">
+            [Additional paragraphs as needed.]
+        </p>
+    </div>
+    
+    <div class="signature">
+        <p>Sincerely,</p>
+        <div class="signature-line"></div>
+        <div class="signature-name" contenteditable="true" id="signature-name">David Silver</div>
+        <div class="signature-title" contenteditable="true" id="signature-title">Principal, Kernel Keys LLC</div>
+    </div>
+    
+    <script>
+        // Auto-fill date
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateField = document.getElementById('date-field');
+            if (dateField.textContent === '[Date]') {
+                const today = new Date();
+                dateField.textContent = today.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+            
+            // Logo selector (for switching between generated logos)
+            const logoImg = document.getElementById('logo-img');
+            const logos = [
+                '../../assets/logo_neural_key.png',
+                '../../assets/logo_geometric_k.png',
+                '../../assets/logo_circuit_monogram.png'
+            ];
+            let currentLogo = 0;
+            
+            logoImg.addEventListener('dblclick', function() {
+                currentLogo = (currentLogo + 1) % logos.length;
+                logoImg.src = logos[currentLogo];
+            });
+        });
+    </script>
+</body>
+</html>

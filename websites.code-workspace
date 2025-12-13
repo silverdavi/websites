@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "path": "shared"
+    },
+    {
+      "path": "unpop-site"
+    },
+    {
+      "path": "dhsilver-site"
+    },
+    {
+      "path": "kernel-keys-site"
+    },
+    {
+      "path": "embino-site"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true
+    },
+    "terminal.integrated.cwd": "${workspaceFolder:shared}"
+  }
+}
+

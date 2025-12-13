@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kernel Keys - Quotation Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #0A0A0A;
+            background: white;
+            padding: 1in;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        
+        .letterhead {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #00D4AA;
+        }
+        
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+        
+        .logo-container img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .company-info {
+            color: #71717A;
+            font-size: 9pt;
+            line-height: 1.8;
+        }
+        
+        .company-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 24pt;
+            font-weight: 700;
+            color: #0A0A0A;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company-name .accent {
+            color: #00D4AA;
+        }
+        
+        .quote-header {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #F5F5F5;
+            border-radius: 8px;
+        }
+        
+        .quote-info {
+            flex: 1;
+        }
+        
+        .quote-info-row {
+            margin-bottom: 0.75rem;
+        }
+        
+        .quote-info-label {
+            font-weight: 600;
+            color: #0A0A0A;
+            display: inline-block;
+            min-width: 120px;
+        }
+        
+        .quote-info-value {
+            color: #71717A;
+        }
+        
+        .quote-number {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #00D4AA;
+            margin-bottom: 0.5rem;
+        }
+        
+        .quote-title {
+            font-size: 20pt;
+            font-weight: 700;
+            margin: 2rem 0 1rem;
+            color: #0A0A0A;
+        }
+        
+        .client-info {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #FAFAFA;
+            border-left: 3px solid #00D4AA;
+        }
+        
+        .client-info strong {
+            color: #0A0A0A;
+        }
+        
+        .line-items {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .line-items thead {
+            background: #0A0A0A;
+            color: white;
+        }
+        
+        .line-items th {
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 10pt;
+        }
+        
+        .line-items td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #E4E4E7;
+        }
+        
+        .line-items tbody tr:hover {
+            background: #FAFAFA;
+        }
+        
+        .line-items .description {
+            width: 50%;
+        }
+        
+        .line-items .quantity {
+            width: 10%;
+            text-align: center;
+        }
+        
+        .line-items .rate {
+            width: 20%;
+            text-align: right;
+        }
+        
+        .line-items .amount {
+            width: 20%;
+            text-align: right;
+            font-weight: 600;
+        }
+        
+        .totals {
+            margin-top: 1rem;
+            margin-left: auto;
+            width: 300px;
+        }
+        
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #E4E4E7;
+        }
+        
+        .total-row.grand-total {
+            border-top: 2px solid #00D4AA;
+            border-bottom: 2px solid #00D4AA;
+            margin-top: 0.5rem;
+            padding-top: 0.75rem;
+            font-size: 12pt;
+            font-weight: 700;
+        }
+        
+        .total-label {
+            color: #71717A;
+        }
+        
+        .total-value {
+            font-weight: 600;
+            color: #0A0A0A;
+        }
+        
+        .terms {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #E4E4E7;
+        }
+        
+        .terms h3 {
+            font-size: 12pt;
+            margin-bottom: 0.75rem;
+            color: #0A0A0A;
+        }
+        
+        .terms ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .terms li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #71717A;
+        }
+        
+        .terms li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00D4AA;
+            font-weight: bold;
+        }
+        
+        .notes {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #F5F5F5;
+            border-left: 3px solid #6366F1;
+        }
+        
+        .notes h3 {
+            font-size: 11pt;
+            margin-bottom: 0.5rem;
+            color: #0A0A0A;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0.75in;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            @page {
+                margin: 0.75in;
+            }
+        }
+        
+        /* Edit mode styles */
+        .editable {
+            border-bottom: 1px dashed #E4E4E7;
+            min-width: 100px;
+            display: inline-block;
+            padding: 2px 4px;
+        }
+        
+        .editable:focus {
+            outline: 2px solid #00D4AA;
+            outline-offset: 2px;
+            border-bottom-color: #00D4AA;
+        }
+        
+        .instructions {
+            background: #F5F5F5;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid #00D4AA;
+            font-size: 9pt;
+            color: #71717A;
+        }
+        
+        .instructions strong {
+            color: #0A0A0A;
+        }
+        
+        .add-row-btn {
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #00D4AA;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10pt;
+        }
+        
+        .add-row-btn:hover {
+            background: #00B89C;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions no-print">
+        <strong>Instructions:</strong> Click on fields to edit. Use the "Add Row" button to add line items. Use browser print (Cmd/Ctrl+P) to save as PDF.
+    </div>
+    
+    <div class="letterhead">
+        <div class="logo-container">
+            <img src="../../assets/logo_neural_key.png" alt="Kernel Keys Logo" id="logo-img">
+        </div>
+        <div class="company-name">
+            Kernel<span class="accent">Keys</span>
+        </div>
+        <div class="company-info">
+            <div>Kernel Keys LLC</div>
+            <div>New York, NY, USA</div>
+            <div>david@kernel-keys.com</div>
+            <div>kernel-keys.com</div>
+        </div>
+    </div>
+    
+    <div class="quote-header">
+        <div class="quote-info">
+            <div class="quote-info-row">
+                <span class="quote-info-label">Quote #:</span>
+                <span class="quote-info-value" contenteditable="true" class="editable" id="quote-number">[QUOTE-YYYY-###]</span>
+            </div>
+            <div class="quote-info-row">
+                <span class="quote-info-label">Date:</span>
+                <span class="quote-info-value" contenteditable="true" class="editable" id="quote-date">[Date]</span>
+            </div>
+            <div class="quote-info-row">
+                <span class="quote-info-label">Valid Until:</span>
+                <span class="quote-info-value" contenteditable="true" class="editable" id="valid-until">[Date]</span>
+            </div>
+        </div>
+        <div class="quote-number" contenteditable="true" id="quote-title">QUOTATION</div>
+    </div>
+    
+    <div class="quote-title" contenteditable="true" id="project-title">[Project Title]</div>
+    
+    <div class="client-info">
+        <div><strong>To:</strong> <span contenteditable="true" class="editable" id="client-name">[Client Name]</span></div>
+        <div><strong>Company:</strong> <span contenteditable="true" class="editable" id="client-company">[Company]</span></div>
+        <div><strong>Email:</strong> <span contenteditable="true" class="editable" id="client-email">[Email]</span></div>
+    </div>
+    
+    <table class="line-items" id="line-items-table">
+        <thead>
+            <tr>
+                <th class="description">Description</th>
+                <th class="quantity">Qty</th>
+                <th class="rate">Rate</th>
+                <th class="amount">Amount</th>
+            </tr>
+        </thead>
+        <tbody id="line-items-body">
+            <tr>
+                <td class="description" contenteditable="true">[Service Description]</td>
+                <td class="quantity" contenteditable="true">1</td>
+                <td class="rate" contenteditable="true">$0.00</td>
+                <td class="amount">$0.00</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button class="add-row-btn no-print" onclick="addLineItem()">+ Add Row</button>
+    
+    <div class="totals">
+        <div class="total-row">
+            <span class="total-label">Subtotal:</span>
+            <span class="total-value" id="subtotal">$0.00</span>
+        </div>
+        <div class="total-row">
+            <span class="total-label">Tax:</span>
+            <span class="total-value" contenteditable="true" class="editable" id="tax">$0.00</span>
+        </div>
+        <div class="total-row grand-total">
+            <span class="total-label">Total:</span>
+            <span class="total-value" id="grand-total">$0.00</span>
+        </div>
+    </div>
+    
+    <div class="terms">
+        <h3>Terms & Conditions</h3>
+        <ul contenteditable="true" id="terms-list">
+            <li>Payment terms: Net 30 days</li>
+            <li>This quotation is valid for 30 days from the date of issue</li>
+            <li>All work will be performed in accordance with agreed specifications</li>
+            <li>Intellectual property rights as per separate agreement</li>
+        </ul>
+    </div>
+    
+    <div class="notes" contenteditable="true" id="notes">
+        <h3>Notes</h3>
+        <p>[Additional notes or special instructions]</p>
+    </div>
+    
+    <script>
+        // Auto-fill dates
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateField = document.getElementById('quote-date');
+            if (dateField.textContent === '[Date]') {
+                const today = new Date();
+                dateField.textContent = today.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+            
+            const validUntilField = document.getElementById('valid-until');
+            if (validUntilField.textContent === '[Date]') {
+                const future = new Date();
+                future.setDate(future.getDate() + 30);
+                validUntilField.textContent = future.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+            
+            // Auto-generate quote number
+            const quoteNumberField = document.getElementById('quote-number');
+            if (quoteNumberField.textContent === '[QUOTE-YYYY-###]') {
+                const today = new Date();
+                const year = today.getFullYear();
+                const num = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+                quoteNumberField.textContent = `QUOTE-${year}-${num}`;
+            }
+            
+            // Calculate totals when rates change
+            const table = document.getElementById('line-items-table');
+            table.addEventListener('input', calculateTotals);
+            
+            // Initial calculation
+            calculateTotals();
+            
+            // Logo selector
+            const logoImg = document.getElementById('logo-img');
+            const logos = [
+                '../../assets/logo_neural_key.png',
+                '../../assets/logo_geometric_k.png',
+                '../../assets/logo_circuit_monogram.png'
+            ];
+            let currentLogo = 0;
+            
+            logoImg.addEventListener('dblclick', function() {
+                currentLogo = (currentLogo + 1) % logos.length;
+                logoImg.src = logos[currentLogo];
+            });
+        });
+        
+        function addLineItem() {
+            const tbody = document.getElementById('line-items-body');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td class="description" contenteditable="true">[Service Description]</td>
+                <td class="quantity" contenteditable="true">1</td>
+                <td class="rate" contenteditable="true">$0.00</td>
+                <td class="amount">$0.00</td>
+            `;
+            tbody.appendChild(row);
+            
+            // Add event listener for calculations
+            row.querySelector('.rate').addEventListener('input', calculateTotals);
+            row.querySelector('.quantity').addEventListener('input', calculateTotals);
+        }
+        
+        function calculateTotals() {
+            const rows = document.querySelectorAll('#line-items-body tr');
+            let subtotal = 0;
+            
+            rows.forEach(row => {
+                const qty = parseFloat(row.querySelector('.quantity').textContent) || 0;
+                const rateText = row.querySelector('.rate').textContent.replace(/[^0-9.]/g, '');
+                const rate = parseFloat(rateText) || 0;
+                const amount = qty * rate;
+                
+                row.querySelector('.amount').textContent = '$' + amount.toFixed(2);
+                subtotal += amount;
+            });
+            
+            document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+            
+            const taxText = document.getElementById('tax').textContent.replace(/[^0-9.]/g, '');
+            const tax = parseFloat(taxText) || 0;
+            const grandTotal = subtotal + tax;
+            
+            document.getElementById('grand-total').textContent = '$' + grandTotal.toFixed(2);
+        }
+    </script>
+</body>
+</html>

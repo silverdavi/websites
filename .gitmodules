@@ -1,0 +1,12 @@
+[submodule "dhsilver-site"]
+	path = dhsilver-site
+	url = https://github.com/silverdavi/dhsilver-site.git
+[submodule "embino-site"]
+	path = embino-site
+	url = https://github.com/silverdavi/embino-site.git
+[submodule "kernel-keys-site"]
+	path = kernel-keys-site
+	url = https://github.com/silverdavi/kernel-keys-site.git
+[submodule "unpop-site"]
+	path = unpop-site
+	url = https://github.com/silverdavi/unpop-site.git

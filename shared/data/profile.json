@@ -1,0 +1,390 @@
+{
+  "personal": {
+    "name": {
+      "first": "David",
+      "middle": "H.",
+      "last": "Silver",
+      "full": "David H. Silver"
+    },
+    "title": "Researcher · Computational Biologist · AI/ML Expert",
+    "location": "NY, USA",
+    "email": {
+      "primary": "david@remiza.ai",
+      "personal": "silverdavi@gmail.com"
+    },
+    "phone": "+1-929-782-2060"
+  },
+
+  "ids": {
+    "orcid": "0000-0002-3071-304X",
+    "scopus": "54996999300",
+    "linkedin": "davidsilveril",
+    "github": "silverdavi"
+  },
+
+  "education": [
+    {
+      "degree": "Microsoft Research PhD Fellowship",
+      "field": "Biomathematics, Bioinformatics, and Computational Biology",
+      "institution": "Technion Graduate School & Microsoft Research Cambridge",
+      "location": "Cambridge, UK",
+      "years": "2011–2013",
+      "status": "completed",
+      "notes": "Focus on high-throughput data analysis, evolutionary modeling, and mathematical foundations of biological systems"
+    },
+    {
+      "degree": "B.Sc. (Unfinished)",
+      "field": "Mathematics & Biology",
+      "institution": "Technion—Israel Institute of Technology",
+      "program": "Rothschild Scholars Program for Excellence",
+      "years": "2007–2013",
+      "status": "incomplete",
+      "notes": "Transitioned to applied research and industry roles prior to degree completion"
+    }
+  ],
+
+  "experience": {
+    "industry": [
+      {
+        "title": "Head of AI/ML",
+        "company": "Rhea Labs",
+        "url": "https://www.rheafertility.com/",
+        "years": "2023–Present",
+        "description": "Leading AI/ML initiatives for reproductive health technology. Overseeing development of AI-powered diagnostic tools and patient journey management technologies following Embryonics acquisition."
+      },
+      {
+        "title": "Head of AI/ML",
+        "company": "Canotera",
+        "url": "https://www.canotera.com",
+        "years": "2023–Present",
+        "description": "Leading AI initiatives for legal dispute outcomes prediction. Building tech-driven systems for litigation funding, insurance, and law firms."
+      },
+      {
+        "title": "Chief Technology Officer (CTO)",
+        "company": "AKA FOODS",
+        "url": "https://www.aka-food.com/",
+        "years": "2021–2023",
+        "description": "Initiated deep-learning strategies and R&D roadmap. Led development of generative AI system for recipe generation."
+      },
+      {
+        "title": "CEO & CTO",
+        "company": "Embryonics",
+        "url": "https://embryonics.me",
+        "years": "2019–2023",
+        "description": "Founded and led fertility-tech company using Geometric ML to improve IVF success rates. Led successful acquisition by Rhea in 2023."
+      },
+      {
+        "title": "ML Researcher",
+        "company": "Apple Inc.",
+        "years": "2016–2019",
+        "description": "Classical signal processing and machine learning research in software and hardware projects across various sensors and technologies."
+      },
+      {
+        "title": "Algorithm Engineer",
+        "company": "Intel Corporation",
+        "division": "RealSense",
+        "years": "2013–2016",
+        "description": "Computer vision algorithm development for depth sensing, from theoretical R&D to ASIC-compatible implementations."
+      }
+    ],
+    "research": [
+      {
+        "title": "Research Assistant",
+        "lab": "Computational Evolution & Development Lab",
+        "institution": "Technion",
+        "pi": "Prof. Itai Yanai",
+        "years": "2010–2013",
+        "focus": "Computational biology, high-throughput data analysis, genomics, gene-expression research"
+      },
+      {
+        "title": "Research Assistant",
+        "lab": "Evoked Potentials Laboratory",
+        "institution": "Technion",
+        "pi": "Prof. Hillel Pratt",
+        "years": "2008–2010",
+        "focus": "Neural signal processing, cognitive electrophysiology, EEG, brain-computer interfaces"
+      },
+      {
+        "title": "Research Assistant",
+        "lab": "VR and Neurocognition Lab",
+        "institution": "Technion",
+        "pi": "Prof. Miriam Reiner",
+        "years": "2009–2010",
+        "focus": "Virtual reality, neurocognitive studies, brain data analysis"
+      },
+      {
+        "title": "Research Assistant",
+        "lab": "Intelligent Systems Lab",
+        "institution": "Technion, CS Department",
+        "pi": "Prof. Michael Lindenbaum",
+        "years": "2007–2009",
+        "focus": "Classical machine learning, image processing"
+      }
+    ]
+  },
+
+  "publications": [
+    {
+      "title": "Investigating Audience Preferences Within the Hybrid Competitive-Comedic Format of Taskmaster UK",
+      "venue": "PLOS ONE",
+      "year": 2025,
+      "doi": "10.1371/journal.pone.0331064",
+      "role": "sole-author"
+    },
+    {
+      "title": "Enhancing Predictive Accuracy in Embryo Implantation: The Bonna Algorithm and its Clinical Implications",
+      "venue": "Lecture Notes in Computer Science, AIiH 2024",
+      "year": 2024,
+      "doi": "10.1007/978-3-031-67285-9_12",
+      "authors": ["Rave, G.", "Fordham, D.E.", "Bronstein, A.M.", "Silver, D.H."],
+      "role": "co-author"
+    },
+    {
+      "title": "Embryologist Agreement When Assessing Blastocyst Implantation Probability: Is Data-Driven Prediction the Solution to Embryo Assessment Subjectivity?",
+      "venue": "Human Reproduction",
+      "year": 2022,
+      "doi": "10.1093/humrep/deac171",
+      "role": "co-author"
+    },
+    {
+      "title": "Data-Driven Prediction of Embryo Implantation Probability Using IVF Time-lapse Imaging",
+      "venue": "MIDL 2020",
+      "year": 2020,
+      "doi": "10.48550/ARXIV.2006.01035",
+      "role": "first-author"
+    },
+    {
+      "title": "Intel® RealSense™ SR300 Coded Light Depth Camera",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "year": 2019,
+      "doi": "10.1109/tpami.2019.2915841",
+      "role": "co-author"
+    },
+    {
+      "title": "The Gene Regulatory Program of Acrobeloides nanus Reveals Conservation of Phylum-Specific Expression",
+      "venue": "PNAS",
+      "year": 2018,
+      "doi": "10.1073/pnas.1720817115",
+      "role": "co-author"
+    },
+    {
+      "title": "The Mid-Developmental Transition and the Evolution of Animal Body Plans",
+      "venue": "Nature",
+      "year": 2016,
+      "doi": "10.1038/nature16994",
+      "role": "co-author"
+    },
+    {
+      "title": "ELOPER: Elongation of Paired-End Reads as a Pre-Processing Tool for Improved de Novo Genome Assembly",
+      "venue": "Bioinformatics",
+      "year": 2013,
+      "doi": "10.1093/bioinformatics/btt169",
+      "authors": ["Silver, D.H.", "Ben-Elazar, S.", "Bogoslavsky, A.", "Yanai, I."],
+      "role": "first-author"
+    },
+    {
+      "title": "Identifying Functional Links Between Genes by Evolutionary Transcriptomics",
+      "venue": "Molecular BioSystems",
+      "year": 2012,
+      "doi": "10.1039/c2mb25054c",
+      "authors": ["Silver, D.H.", "Levin, M.", "Yanai, I."],
+      "role": "first-author"
+    },
+    {
+      "title": "A Novel Lineage of Myoviruses Infecting Cyanobacteria is Widespread in the Oceans",
+      "venue": "PNAS",
+      "year": 2012,
+      "doi": "10.1073/pnas.1115467109",
+      "role": "co-author"
+    }
+  ],
+
+  "patents": [
+    {
+      "title": "Enhanced Depth Mapping Using Visual Inertial Odometry",
+      "assignee": "Apple Inc.",
+      "numbers": ["US12153140B2", "EP3857259A1"],
+      "year": 2024,
+      "status": "granted"
+    },
+    {
+      "title": "Calibration of a Depth Sensing Array Using Color Image Data",
+      "assignee": "Apple Inc.",
+      "numbers": ["US11914078B2", "US20210208262A1"],
+      "year": 2024,
+      "status": "granted"
+    },
+    {
+      "title": "Food Processing Systems and Methods",
+      "assignee": "AKA Foods",
+      "numbers": ["US20230288392A1", "WO2023170639A1"],
+      "year": 2023,
+      "status": "pending"
+    },
+    {
+      "title": "Mixture Modeling Systems and Methods",
+      "assignee": "AKA Foods",
+      "numbers": ["US20230289492A1", "WO2023170640A1"],
+      "year": 2023,
+      "status": "pending"
+    },
+    {
+      "title": "Molecular Embedding Systems and Methods",
+      "assignee": "AKA Foods",
+      "numbers": ["US20230290444A1", "WO2023170641A1"],
+      "year": 2023,
+      "status": "pending"
+    },
+    {
+      "title": "Virtual Tasting Systems and Methods",
+      "assignee": "AKA Foods",
+      "numbers": ["US20230113613A1", "EP4412471A1"],
+      "year": 2023,
+      "status": "pending"
+    },
+    {
+      "title": "Predicting Embryo Implantation Probability",
+      "assignee": "Embryonics",
+      "numbers": ["WO2022009186A1", "US20220012873A1", "EP4178485A1"],
+      "year": 2022,
+      "status": "pending"
+    },
+    {
+      "title": "Semantically Altering Medical Images",
+      "assignee": "Embryonics",
+      "numbers": ["US20220284542A1"],
+      "year": 2022,
+      "status": "pending"
+    },
+    {
+      "title": "Estimating Oocyte Quality",
+      "assignee": "Embryonics",
+      "numbers": ["US20220375069A1"],
+      "year": 2022,
+      "status": "pending"
+    },
+    {
+      "title": "Calibrating Texture Cameras Using Features Extracted from Depth Images",
+      "assignee": "Intel",
+      "numbers": ["US10540784B2", "US20210081781A1"],
+      "year": 2020,
+      "status": "granted"
+    },
+    {
+      "title": "Range Reconstruction Using Shape Prior",
+      "assignee": "Intel",
+      "numbers": ["US10775501B2", "US20180348368A1"],
+      "year": 2020,
+      "status": "granted"
+    },
+    {
+      "title": "Auto Range Control for Active Illumination Depth Camera",
+      "assignee": "Intel",
+      "numbers": ["US09800795B2", "US10451189B2", "US10927969B2"],
+      "year": 2017,
+      "status": "granted"
+    },
+    {
+      "title": "Code Filters for Coded Light Depth Acquisition in Depth Images",
+      "assignee": "Intel",
+      "numbers": ["US09792671B2", "US20170178294A1"],
+      "year": 2017,
+      "status": "granted"
+    },
+    {
+      "title": "Morphological and Geometric Edge Filters for Edge Enhancement in Depth Images",
+      "assignee": "Intel",
+      "numbers": ["US20170178305A1", "US9852495B2"],
+      "year": 2017,
+      "status": "granted"
+    }
+  ],
+
+  "expertise": {
+    "domains": [
+      "Geometric Machine Learning",
+      "Computational Biology",
+      "Computer Vision",
+      "Depth Sensing",
+      "Medical AI / Fertility Tech",
+      "Neuroscience & Brain-Computer Interfaces",
+      "Food Tech / Generative AI"
+    ],
+    "technical": [
+      "Deep Learning",
+      "Signal Processing",
+      "High-throughput Data Analysis",
+      "ASIC Algorithm Design",
+      "Time-lapse Imaging",
+      "EEG Analysis"
+    ]
+  },
+
+  "references": [
+    {
+      "name": "Prof. Michael Bronstein",
+      "affiliation": "University of Oxford",
+      "area": "AI & Geometric Methods",
+      "relationship": "Research collaborator, close professional and personal acquaintance"
+    },
+    {
+      "name": "Prof. Alex Bronstein",
+      "affiliation": "Vienna",
+      "area": "AI & Geometric Methods",
+      "relationship": "Long-term research collaborator, close professional and personal acquaintance"
+    },
+    {
+      "name": "Prof. Itai Yanai",
+      "affiliation": "NYU",
+      "area": "Computational Biology",
+      "relationship": "PhD Primary Investigator, co-author on 3+ publications including Nature"
+    },
+    {
+      "name": "Prof. Miriam Reiner",
+      "affiliation": "Technion",
+      "area": "Neuroscience",
+      "relationship": "Research supervisor, close professional and personal acquaintance"
+    },
+    {
+      "name": "Prof. Hillel Pratt",
+      "affiliation": "Technion",
+      "area": "Neuroscience",
+      "relationship": "Research collaborator, Evoked Potentials Laboratory"
+    }
+  ],
+
+  "projects": {
+    "unpopularScience": {
+      "type": "book",
+      "title": "Unpopular Science",
+      "status": "completed",
+      "chapters": 50,
+      "description": "A return to the roots of scientific wonder — 50 chapters spanning mathematics, physics, CS, chemistry, philosophy, and history. Anti-sensationalist science communication that respects reader intelligence.",
+      "site": "unpop.info",
+      "dataFile": "unpopular_science.json"
+    },
+    "embino": {
+      "type": "hardware",
+      "title": "Embino",
+      "status": "in-development",
+      "description": "Tiny SLM (Small Language Model) for ESP-class microcontrollers",
+      "site": "embino.com"
+    },
+    "kernelKeys": {
+      "type": "consulting",
+      "title": "Kernel Keys",
+      "status": "active",
+      "description": "Data-driven solutions, ML engineering, geometric ML expertise",
+      "site": "kernel-keys.com"
+    }
+  },
+
+  "stats": {
+    "publications": 12,
+    "patents": 14,
+    "bookChapters": 50,
+    "journalsInclude": ["Nature", "PNAS", "IEEE TPAMI", "Human Reproduction", "Bioinformatics", "PLOS ONE"],
+    "companies": ["Apple", "Intel", "Embryonics", "AKA Foods", "Rhea Labs", "Canotera"]
+  }
+}
+

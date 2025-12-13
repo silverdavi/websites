@@ -1,0 +1,148 @@
+{
+  "book": {
+    "title": "Unpopular Science",
+    "author": "David H. Silver",
+    "tagline": "A return to the roots of scientific wonder",
+    "status": "completed",
+    "chapters": 50,
+    "format": "LaTeX/LuaLaTeX",
+    "source": "/Users/davidsilver/dev/private/unpopular-science-source"
+  },
+
+  "philosophy": {
+    "core": "Anti-sensationalism — science doesn't need manufactured excitement",
+    "approach": "Rigorous accessibility — present science as it truly is, both elegant and complex",
+    "goal": "Understanding, not just exposure",
+    "voice": "Authoritative but humble, direct entry without preamble",
+    "rules": [
+      "No laugh track science communication",
+      "Let wonder arise naturally from the ideas",
+      "Respect reader intelligence without oversimplifying",
+      "Every word must contribute meaning",
+      "No rhetorical questions or dramatization",
+      "Substance over style"
+    ]
+  },
+
+  "structure": {
+    "perChapter": {
+      "pages": 8,
+      "sections": [
+        { "name": "Title + Summary + Quote", "pages": 1 },
+        { "name": "Historical Context", "pages": "1-2" },
+        { "name": "Main Content (Phenomenon)", "pages": "3-4" },
+        { "name": "Technical Analysis", "pages": 1 },
+        { "name": "Sidenote (Visual)", "pages": 1 }
+      ]
+    }
+  },
+
+  "topics": {
+    "mathematics": [
+      { "ch": 1, "title": "An Axiom of Your Choice", "topic": "Banach-Tarski Paradox" },
+      { "ch": 7, "title": "A Complex (Projective) Billiard Game", "topic": "Poncelet's Porism" },
+      { "ch": 8, "title": "70M Steps for Primes", "topic": "Bounded Prime Gaps" },
+      { "ch": 9, "title": "Real Democracy Has Never Been Tried", "topic": "Arrow's Theorem" },
+      { "ch": 15, "title": "Envelope Trade-Up", "topic": "Envelope Paradox" },
+      { "ch": 17, "title": "The Busy Beaver That Ate the TREE", "topic": "Big Numbers" },
+      { "ch": 21, "title": "Exponentially Generalizable", "topic": "Exponential Maps & Lie Theory" },
+      { "ch": 29, "title": "A Plane Hat Trick", "topic": "Hat Monotile (Einstein Problem)" },
+      { "ch": 30, "title": "Divide and Conquer", "topic": "Simpson's Paradox" },
+      { "ch": 33, "title": "The Center Holds", "topic": "Gaussian Correlation Inequality" },
+      { "ch": 39, "title": "Superanonymous", "topic": "Superpermutations (4chan Proof)" }
+    ],
+    "physics": [
+      { "ch": 2, "title": "Dark Energies Are Pushing Us Apart", "topic": "Accelerating Universe" },
+      { "ch": 3, "title": "Relatively Yellow", "topic": "Gold & Relativistic Quantum Mechanics" },
+      { "ch": 4, "title": "Think Outside the Wire", "topic": "EM Fields & Energy Flow" },
+      { "ch": 6, "title": "The Apple Falls the Slowest", "topic": "Gravity as Time Dilation" },
+      { "ch": 10, "title": "The Tunnel at the Beginning of Light", "topic": "Solar Fusion & Quantum Tunneling" },
+      { "ch": 11, "title": "Edges of Tomorrow", "topic": "Topological Insulators" },
+      { "ch": 13, "title": "Right on Spot", "topic": "Poisson's Spot" },
+      { "ch": 14, "title": "A Circle of Time", "topic": "Twin Paradox in Compact Space" },
+      { "ch": 16, "title": "An Empty Threat", "topic": "False Vacuum Decay" },
+      { "ch": 19, "title": "Consider the Muon's PoV", "topic": "Cosmic Ray Muons & Time Dilation" },
+      { "ch": 23, "title": "A Place at the End of Time", "topic": "Black Hole Time Dilation" },
+      { "ch": 24, "title": "Put on Your 4D Glasses", "topic": "Why 4D Spacetime" },
+      { "ch": 27, "title": "A Spectrum of Skies", "topic": "Planetary Sky Colors" },
+      { "ch": 28, "title": "You're So Hot, You Cool Me Down", "topic": "Negative Temperature" },
+      { "ch": 34, "title": "A Thought About Nothing", "topic": "Boltzmann Brain" },
+      { "ch": 36, "title": "Renormalize All the Things", "topic": "QFT vs General Relativity" },
+      { "ch": 37, "title": "Darkness to Bind Them", "topic": "Dark Matter Evidence" },
+      { "ch": 43, "title": "Flat Universers", "topic": "Near-Flat Universe" },
+      { "ch": 45, "title": "The Demon is in the Details", "topic": "Maxwell's Demon" },
+      { "ch": 47, "title": "Matter of Perspective", "topic": "Observer-Dependent Vacuum (Unruh Effect)" },
+      { "ch": 48, "title": "Chaotic Neutrality", "topic": "Three-Body Problem & Chaos" }
+    ],
+    "computerScience": [
+      { "ch": 12, "title": "You Would Like to Order First", "topic": "GSM Encryption Vulnerabilities" },
+      { "ch": 18, "title": "A Leaky Crystal Ball", "topic": "Spectre/Meltdown Attacks" },
+      { "ch": 20, "title": "Capish, Comprehendes, Computes?", "topic": "Chinese Room Argument" },
+      { "ch": 22, "title": "Creeping Bug", "topic": "Minecraft Creeper Origin" },
+      { "ch": 40, "title": "Slices of Life", "topic": "DNA Sequencing Algorithms" },
+      { "ch": 41, "title": "It Is Just a Phase", "topic": "Hough Transform" }
+    ],
+    "chemistry": [
+      { "ch": 25, "title": "Let There Be Bioluminescence", "topic": "Firefly Light Production" },
+      { "ch": 35, "title": "From Air to Arbor", "topic": "Trees Made from CO₂" },
+      { "ch": 42, "title": "Wet, Cold, Slippery Slope", "topic": "Ice Slipperiness" },
+      { "ch": 46, "title": "Orbital Affairs", "topic": "Woodward-Hoffmann Rules" }
+    ],
+    "biology": [
+      { "ch": 31, "title": "Concentrate on Osmosis", "topic": "Debye's Osmosis Model" },
+      { "ch": 32, "title": "Timing Is Everything", "topic": "Atomic Clocks" },
+      { "ch": 49, "title": "The Three Genome Problem", "topic": "Mitochondrial DNA & IVF" }
+    ],
+    "philosophy": [
+      { "ch": 50, "title": "A Freely Willful Ignorance", "topic": "Consciousness & Free Will" }
+    ],
+    "linguistics": [
+      { "ch": 5, "title": "A Circle of PIE", "topic": "Proto-Indo-European Etymology" }
+    ],
+    "history": [
+      { "ch": 26, "title": "Once in a Jew Moon", "topic": "Jewish Calendar Philosophy" },
+      { "ch": 38, "title": "A Truce Story", "topic": "Christmas Truce 1914" },
+      { "ch": 44, "title": "The Man in the Velvet Mask", "topic": "Man in the Iron Mask" }
+    ]
+  },
+
+  "highlights": [
+    {
+      "title": "Relatively Yellow",
+      "hook": "Gold's color requires relativistic quantum mechanics — electrons reach 58% of light speed"
+    },
+    {
+      "title": "The Apple Falls the Slowest",
+      "hook": "Gravity isn't a force — it's following the shortest path through curved time"
+    },
+    {
+      "title": "From Air to Arbor", 
+      "hook": "Trees are made of air — 95% of their mass comes from atmospheric CO₂"
+    },
+    {
+      "title": "A Leaky Crystal Ball",
+      "hook": "Spectre/Meltdown: how CPUs predicting the future leak your secrets"
+    },
+    {
+      "title": "Superanonymous",
+      "hook": "A 4chan post proved a math conjecture — credited to 'Anonymous 4chan Poster'"
+    },
+    {
+      "title": "A Plane Hat Trick",
+      "hook": "A retired printer solved a 60-year-old tiling problem"
+    },
+    {
+      "title": "The Busy Beaver That Ate the TREE",
+      "hook": "TREE(3) is so large that exponential towers are vanishingly small in comparison"
+    },
+    {
+      "title": "You're So Hot, You Cool Me Down",
+      "hook": "Negative temperatures aren't cold — they're hotter than infinity"
+    }
+  ],
+
+  "prologue_excerpt": "This book returns to the roots of scientific wonder, combining accessible explanations with rigorous mathematical foundations. Unlike contemporary science communication that oversimplifies or sensationalizes, it highlights the beauty of science as it truly is: both elegant and complex. The focus is understanding, not just exposure.",
+
+  "origin_story": "Began as a small 'flight magazine' for a transatlantic family trip. After drafting pieces on why gold is yellow (relativity) and why apples fall (time dilation), the list of topics kept growing into a real book."
+}
+

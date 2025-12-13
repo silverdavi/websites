@@ -1,0 +1,67 @@
+Enhanced depth mapping using visual inertial odometry
+Patent number: 12153140
+Abstract: Imaging apparatus (22) includes a radiation source (40), which emits pulsed beams (42) of optical radiation toward a target scene (24). An array (52) of sensing elements outputs signals indicative of respective times of incidence of photons on the sensing elements. Objective optics (54) form a first image of the target scene on the array of sensing elements. An image sensor (64) captures a second image of the target scene. Processing and control circuitry (56, 58) is configured to process the second image so as to detect a relative motion between at least one object in the target scene and the apparatus, and which is configured to construct, responsively to the signals from the array, histograms of the times of incidence of the photons on the sensing elements and to adjust the histograms responsively to the detected relative motion, and to generate a depth map of the target scene based on the adjusted histograms.
+Type: Grant
+Filed: September 2, 2019
+Date of Patent: November 26, 2024
+Assignee: APPLE INC.
+Inventors: David Silver, Eitan Hirsh, Moshe Laifenfeld, Tal Kaitz
+
+
+Calibration of a depth sensing array using color image data
+Patent number: 11914078
+Abstract: Imaging apparatus (22) includes a radiation source (40), which emits pulsed beams (42) of optical radiation toward a target scene (24). An array (52) of sensing elements (78) output signals indicative of respective times of incidence of photons in a first image of the target scene that is formed on the array of sensing elements. An image sensor (64) captures a second image of the target scene in registration with the first image. Processing and control circuitry (56, 58) identifies, responsively to the signals, areas of the array on which the pulses of optical radiation reflected from corresponding regions of the target scene are incident, and processes the signals from the sensing elements in the identified areas in order measure depth coordinates of the corresponding regions of the target scene based on the times of incidence, while identifying, responsively to the second image, one or more of the regions of the target scene as no-depth regions.
+Type: Grant
+Filed: September 2, 2019
+Date of Patent: February 27, 2024
+Assignee: APPLE INC.
+Inventors: David Silver, Moshe Laifenfeld, Tal Kaitz
+
+
+
+Auto range control for active illumination depth camera
+
+WO US CN DE US10451189B2 David H. Silver Intel Corporation
+Priority 2015-12-21 • Filed 2017-10-11 • Granted 2019-10-22 • Published 2019-10-22
+A method and apparatus for auto range control are described. In one embodiment, the apparatus comprises a projector configured to project a sequence of light patterns on an object; a first camera configured to capture a sequence of images of the object illuminated with the projected light patterns …
+Morphological and geometric edge filters for edge enhancement in depth images
+
+WO US US9852495B2 David H. Silver Intel Corporation
+Priority 2015-12-22 • Filed 2015-12-22 • Granted 2017-12-26 • Published 2017-12-26
+A mechanism is described for facilitating three-dimensional (3D) depth imaging systems, and morphological and geometric filters for edge enhancement in depth images at computing devices according to one embodiment. A method of embodiments, as described herein, includes detecting an input digital …
+Range reconstruction using shape prior
+
+US US10775501B2 David H. Silver Intel Corporation
+Priority 2017-06-01 • Filed 2017-06-01 • Granted 2020-09-15 • Published 2020-09-15
+Arrangements (e.g., apparatus, system, method, article of manufacture) for reconstructing a depth image of a scene. Some embodiments include: a processor; and a non-transitory computer readable medium to store a set of instructions for execution by the processor, the set of instructions to cause …
+Molecular embedding systems and methods
+WO US WO2023170641A1 David H. Silver Aka Foods LTD
+Priority 2022-03-10 • Filed 2023-03-10 • Published 2023-09-14
+Example molecular embedding systems and methods are described. In one implementation, a system includes a molecular embedder configured to receive structural and chemical information associated with a single-molecule ingredient from a plurality of single- molecule ingredients. The molecular …
+Estimating Oocyte Quality
+
+US US20220375069A1 David H. Silver Embryonics LTD
+Priority 2021-05-18 • Filed 2021-05-18 • Published 2022-11-24
+The present invention extends to methods, systems, and computer program products for estimating oocyte quality. A machine learning algorithm accesses oocyte training data for a mammalian species (e.g., humans) and trains a neural network to estimate oocyte quality for the mammalian species based …
+Code filters for coded light depth acquisition in depth images
+
+WO US DE US20170178294A1 David H. Silver Intel Corporation
+Priority 2015-12-22 • Filed 2015-12-22 • Published 2017-06-22
+A mechanism is described for facilitating code filters for coded light depth acquisition in depth images at computing devices according to one embodiment. A method of embodiments, as described herein, includes detecting a code image of an object comprising pixels of code values and pixels of …
+Predicting embryo implantation probability
+WO EP US WO2022009186A1 David H. Silver Embryonics LTD
+Priority 2020-07-10 • Filed 2021-07-12 • Published 2022-01-13
+The present invention extends to methods, systems, and computer program products for predicting embryo implantation probability. A neural network accesses a set of images depicting an embryo. The neural network determines a correlation between the set of images and images corresponding to other …
+Mixture modeling systems and methods
+WO US WO2023170640A1 David H. Silver Aka Foods LTD
+Priority 2022-03-10 • Filed 2023-03-10 • Published 2023-09-14
+Example mixture modeling systems and methods are described. In one implementation, a system includes an encoder that receives multiple base ingredients and produces multiple corresponding representations. A composite modeler receives a mixture definition comprising a list of base ingredients and …
+Food processing systems and methods
+WO EP US WO2023170639A1 David H. Silver Aka Foods LTD
+Priority 2021-10-07 • Filed 2023-03-10 • Published 2023-09-14
+Example food processing systems and methods are described. In one implementation, a system includes a molecular embedder that receives a molecular profile of a single-molecule ingredient from multiple single-molecule ingredients and generates a representation of the single-molecule ingredient. A …
+Semantically Altering Medical Images
+
+US US20220284542A1 David H. Silver Embryonics LTD
+Priority 2021-03-08 • Filed 2021-03-08 • Published 2022-09-08
+The present invention extends to methods, systems, and computer program products for semantically altering a medical image. A medical image and a transform are accessed. The transform is used to transform the medical image to a simpler image having reduced complexity relative to the medical image.

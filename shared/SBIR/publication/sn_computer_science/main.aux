@@ -1,0 +1,181 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{1}{section*.1}\protected@file@percent }
+\citation{georgiou2009micropython}
+\citation{chen2021codex,roziere2023codellama}
+\citation{chen2021codex}
+\citation{nijkamp2023codegen}
+\citation{li2023starcoder}
+\citation{eldan2023tinystories}
+\citation{schick2021small}
+\citation{team2024gemma}
+\citation{post2018constrained}
+\citation{shin2021constrained,scholak2021picard}
+\citation{poesia2022synchromesh}
+\citation{hu2021lora}
+\citation{zhang2023adalora}
+\citation{dettmers2023qlora}
+\citation{plotkin1981sos}
+\citation{winskel1993semantics}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Programming abstraction evolution. GC-SLMs fill the gap}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:timeline}{{1}{2}{Programming abstraction evolution. GC-SLMs fill the gap}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{2}{Background and Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}The Embedded Programming Abstraction Gap}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Transformer Language Models for Code}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Constrained Decoding}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Parameter-Efficient Fine-Tuning}{2}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation}{2}{section.3}\protected@file@percent }
+\newlabel{sec:problem}{{3}{2}{Problem Formulation}{section.3}{}}
+\citation{lindholm2014jvm}
+\citation{appel2004modern}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Formal Semantics and Correctness}{3}{section.4}\protected@file@percent }
+\newlabel{sec:semantics}{{4}{3}{Formal Semantics and Correctness}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}DSL Operational Semantics}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Bytecode Machine Semantics}{3}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Compilation and Correctness}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces GC-SLM architecture with grammar-guided decoding}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:architecture}{{2}{3}{GC-SLM architecture with grammar-guided decoding}{figure.2}{}}
+\newlabel{thm:compile}{{1}{3}{Compilation and Correctness}{theorem.\theHchapter .1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}End-to-End Correctness}{3}{subsection.4.4}\protected@file@percent }
+\newlabel{thm:validity}{{2}{3}{End-to-End Correctness}{theorem.\theHchapter .2}{}}
+\newlabel{cor:e2e}{{1}{3}{End-to-End Correctness}{corollary.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}The GC-SLM Framework}{3}{section.5}\protected@file@percent }
+\newlabel{sec:framework}{{5}{3}{The GC-SLM Framework}{section.5}{}}
+\citation{shin2021constrained,scholak2021picard}
+\citation{earley1970parser,grune2012parsing}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Grammar-Guided Decoding}}{4}{algorithm.1}\protected@file@percent }
+\newlabel{alg:ggd}{{1}{4}{Algorithm}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Small Language Model Backbone}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Grammar-Guided Decoding}{4}{section.6}\protected@file@percent }
+\newlabel{sec:decoding}{{6}{4}{Grammar-Guided Decoding}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Algorithm}{4}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Complexity Analysis}{4}{subsection.6.2}\protected@file@percent }
+\newlabel{prop:complexity}{{1}{4}{Complexity Analysis}{proposition.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Search Space Reduction}{4}{subsection.6.3}\protected@file@percent }
+\newlabel{thm:constraint}{{3}{4}{Search Space Reduction}{theorem.\theHchapter .3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Sparse Low-Rank Adaptation (S-LoRA)}{4}{section.7}\protected@file@percent }
+\newlabel{sec:slora}{{7}{4}{Sparse Low-Rank Adaptation (S-LoRA)}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Formulation}{4}{subsection.7.1}\protected@file@percent }
+\citation{shalev2014understanding}
+\citation{vaswani2017attention}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Standard LoRA vs.\ S-LoRA. Structured sparsity (block pruning) in the low-rank factors reduces trainable parameters by 60\% while preserving expressiveness}}{5}{figure.3}\protected@file@percent }
+\newlabel{fig:slora}{{3}{5}{Standard LoRA vs.\ S-LoRA. Structured sparsity (block pruning) in the low-rank factors reduces trainable parameters by 60\% while preserving expressiveness}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Mask Learning}{5}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Theoretical Justification}{5}{subsection.7.3}\protected@file@percent }
+\newlabel{prop:expressiveness}{{2}{5}{Theoretical Justification}{proposition.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Theoretical Analysis}{5}{section.8}\protected@file@percent }
+\newlabel{sec:theory}{{8}{5}{Theoretical Analysis}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Model Capacity Lower Bound}{5}{subsection.8.1}\protected@file@percent }
+\newlabel{thm:capacity}{{4}{5}{Model Capacity Lower Bound}{theorem.\theHchapter .4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Implication.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Sample Complexity}{5}{subsection.8.2}\protected@file@percent }
+\newlabel{thm:sample}{{5}{5}{Sample Complexity}{theorem.\theHchapter .5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Decoding Complexity with Explicit Constants}{5}{subsection.8.3}\protected@file@percent }
+\newlabel{thm:decode-refined}{{6}{5}{Decoding Complexity with Explicit Constants}{theorem.\theHchapter .6}{}}
+\newlabel{prop:dominance}{{3}{5}{Decoding Complexity with Explicit Constants}{proposition.3}{}}
+\citation{dettmers2023qlora,jacob2018quantization}
+\citation{lee2017plc}
+\citation{wilhelm2008wcet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Model Size and MCU Flash}{6}{subsection.8.4}\protected@file@percent }
+\newlabel{thm:flash}{{7}{6}{Model Size and MCU Flash}{theorem.\theHchapter .7}{}}
+\newlabel{cor:quant}{{2}{6}{Model Size and MCU Flash}{corollary.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}S-LoRA Sparsity-Capacity Trade-off}{6}{subsection.8.5}\protected@file@percent }
+\newlabel{prop:slora-flash}{{4}{6}{S-LoRA Sparsity-Capacity Trade-off}{proposition.4}{}}
+\newlabel{thm:capacity-scaling}{{8}{6}{S-LoRA Sparsity-Capacity Trade-off}{theorem.\theHchapter .8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}Concrete Instantiation for Our DSL}{6}{subsection.8.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Theoretical vs.\ actual model configurations for our 47-rule DSL}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:theory-actual}{{1}{6}{Theoretical vs.\ actual model configurations for our 47-rule DSL}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces ESP32 system deployment. GC-SLM generates verified DSL bytecode on edge device; micro-interpreter ($<$16KB) executes on the \$4 ESP32, controlling sensors and actuators}}{6}{figure.4}\protected@file@percent }
+\newlabel{fig:esp32}{{4}{6}{ESP32 system deployment. GC-SLM generates verified DSL bytecode on edge device; micro-interpreter ($<$16KB) executes on the \$4 ESP32, controlling sensors and actuators}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Hardware Architecture}{6}{section.9}\protected@file@percent }
+\newlabel{sec:hardware}{{9}{6}{Hardware Architecture}{section.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}System Components}{6}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Resource Requirements}{6}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Formal HW/SW Co-Design Model}{6}{section.10}\protected@file@percent }
+\newlabel{sec:codesign}{{10}{6}{Formal HW/SW Co-Design Model}{section.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Abstract Machine Model}{7}{subsection.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Worst-Case Execution Time}{7}{subsection.10.2}\protected@file@percent }
+\newlabel{thm:wcet}{{9}{7}{Worst-Case Execution Time}{theorem.\theHchapter .9}{}}
+\newlabel{thm:sched}{{10}{7}{Worst-Case Execution Time}{theorem.\theHchapter .10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Memory Bounds}{7}{subsection.10.3}\protected@file@percent }
+\newlabel{thm:mem}{{11}{7}{Memory Bounds}{theorem.\theHchapter .11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}Program Memory}{7}{subsection.10.4}\protected@file@percent }
+\newlabel{thm:progsize}{{12}{7}{Program Memory}{theorem.\theHchapter .12}{}}
+\newlabel{thm:feasible}{{13}{7}{Program Memory}{theorem.\theHchapter .13}{}}
+\citation{chen2021codex}
+\citation{nijkamp2023codegen}
+\citation{li2023starcoder}
+\citation{li2022alphacode}
+\citation{scholak2021picard}
+\citation{poesia2022synchromesh}
+\citation{hu2021lora}
+\citation{zhang2023adalora}
+\citation{dettmers2023qlora}
+\citation{halbwachs1991lustre}
+\citation{berry1992esterel}
+\citation{santanna2013ceu}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Training compute (GPU-hours on A100) vs.\ model size. S-LoRA reduces cost by 50\% vs.\ LoRA. Target region shows feasible configurations}}{8}{figure.5}\protected@file@percent }
+\newlabel{fig:scaling}{{5}{8}{Training compute (GPU-hours on A100) vs.\ model size. S-LoRA reduces cost by 50\% vs.\ LoRA. Target region shows feasible configurations}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Training resource estimates for GC-SLM configurations}}{8}{table.2}\protected@file@percent }
+\newlabel{tab:resources}{{2}{8}{Training resource estimates for GC-SLM configurations}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Training Methodology}{8}{section.11}\protected@file@percent }
+\newlabel{sec:training}{{11}{8}{Training Methodology}{section.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Data Generation}{8}{subsection.11.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Training Estimates}{8}{subsection.11.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3}Target DSL}{8}{subsection.11.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Discussion}{8}{section.12}\protected@file@percent }
+\newlabel{sec:discussion}{{12}{8}{Discussion}{section.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{8}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Future Directions.}{8}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Related Work}{8}{section.13}\protected@file@percent }
+\newlabel{sec:related}{{13}{8}{Related Work}{section.13}{}}
+\@writefile{toc}{\contentsline {paragraph}{Code Generation with LLMs.}{8}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Constrained Decoding.}{8}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Efficient Fine-tuning.}{8}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Embedded Systems DSLs.}{8}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}Conclusion}{8}{section.14}\protected@file@percent }
+\newlabel{sec:conclusion}{{14}{8}{Conclusion}{section.14}{}}
+\bibcite{chen2021codex}{1}
+\bibcite{nijkamp2023codegen}{2}
+\bibcite{li2023starcoder}{3}
+\bibcite{li2022alphacode}{4}
+\bibcite{roziere2023codellama}{5}
+\bibcite{eldan2023tinystories}{6}
+\bibcite{schick2021small}{7}
+\bibcite{team2024gemma}{8}
+\bibcite{shin2021constrained}{9}
+\bibcite{scholak2021picard}{10}
+\bibcite{poesia2022synchromesh}{11}
+\bibcite{post2018constrained}{12}
+\bibcite{hu2021lora}{13}
+\bibcite{zhang2023adalora}{14}
+\bibcite{dettmers2023qlora}{15}
+\bibcite{vaswani2017attention}{16}
+\bibcite{jacob2018quantization}{17}
+\bibcite{appel2004modern}{18}
+\bibcite{lindholm2014jvm}{19}
+\bibcite{plotkin1981sos}{20}
+\bibcite{winskel1993semantics}{21}
+\bibcite{wilhelm2008wcet}{22}
+\bibcite{lee2017plc}{23}
+\bibcite{halbwachs1991lustre}{24}
+\bibcite{berry1992esterel}{25}
+\bibcite{santanna2013ceu}{26}
+\bibcite{georgiou2009micropython}{27}
+\bibcite{earley1970parser}{28}
+\bibcite{grune2012parsing}{29}
+\bibcite{shalev2014understanding}{30}
+\@writefile{toc}{\contentsline {paragraph}{Funding.}{9}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Competing interests.}{9}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ethics approval.}{9}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consent to participate.}{9}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consent for publication.}{9}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Availability of data and materials.}{9}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Code availability.}{9}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Authors' contributions.}{9}{section*.23}\protected@file@percent }
+\gdef \@abspage@last{9}

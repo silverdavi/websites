@@ -1,0 +1,452 @@
+Skip to main content
+orcid logo
+
+David H Silver
+David H Silver; David Silver
+
+orcid logo
+https://orcid.org/0000-0002-3071-304X
+Personal information
+Other IDs
+Scopus Author ID: 54996999300
+Activities
+Collapse all
+Works (11)
+Investigating audience preferences within the hybrid competitive-comedic format of taskmaster UK
+PLOS One
+2025-09-10 | Journal article
+DOI: 10.1371/journal.pone.0331064
+Contributors: David Haim Silver; Maurizio Naldi
+Show less detail
+Homepage URL
+https://doi.org/10.1371/journal.pone.0331064
+Contributors
+David Haim Silver (Author)
+
+Maurizio Naldi (Editor)
+
+Added
+2025-09-10
+Last modified
+2025-09-10
+Source
+:
+Crossref
+Enhancing Predictive Accuracy in Embryo Implantation: The Bonna Algorithm and its Clinical Implications
+Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics
+2024 | Conference paper
+DOI: 10.1007/978-3-031-67285-9_12
+EID: 2-s2.0-85202293351
+Part of ISBN: 9783031672842
+Part of ISSN: 03029743 16113349
+Contributors: Rave, G.; Fordham, D.E.; Bronstein, A.M.; Silver, D.H.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-85202293351&partnerID=MN8TOARS
+Contributors
+Rave, G.
+
+Fordham, D.E.
+
+Bronstein, A.M.
+
+Silver, D.H.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Embryologist agreement when assessing blastocyst implantation probability: is data-driven prediction the solution to embryo assessment subjectivity?
+Human Reproduction
+2022 | Journal article
+DOI: 10.1093/humrep/deac171
+EID: 2-s2.0-85139535700
+Part of ISSN: 02681161 14602350
+Contributors: Fordham, D.E.; Rosentraub, D.; Polsky, A.L.; Aviram, T.; Wolf, Y.; Perl, O.; Devir, A.; Rosentraub, S.; Silver, D.H.; Zamir, Y.G. et al.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-85139535700&partnerID=MN8TOARS
+Contributors
+Fordham, D.E.
+
+Rosentraub, D.
+
+Polsky, A.L.
+
+Aviram, T.
+
+Wolf, Y.
+
+Perl, O.
+
+Devir, A.
+
+Rosentraub, S.
+
+Silver, D.H.
+
+Zamir, Y.G.
+
+Bronstein, A.M.
+
+Lara, M.L.
+
+Nagi, J.B.
+
+Alvarez, A.
+
+Munné, S.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Data-Driven Prediction of Embryo Implantation Probability Using IVF Time-lapse Imaging
+MIDL
+2020 | Conference paper
+DOI: 10.48550/ARXIV.2006.01035
+Show less detail
+Homepage URL
+https://arxiv.org/abs/2006.01035
+Citation (bibtex)
+Show citation
+Description
+The process of fertilizing a human egg outside the body in order to help those suffering from infertility to conceive is known as in vitro fertilization (IVF). Despite being the most effective method of assisted reproductive technology (ART), the average success rate of IVF is a mere 20-40%. One step that is critical to the success of the procedure is selecting which embryo to transfer to the patient, a process typically conducted manually and without any universally accepted and standardized criteria. In this paper we describe a novel data-driven system trained to directly predict embryo implantation probability from embryogenesis time-lapse imaging videos. Using retrospectively collected videos from 272 embryos, we demonstrate that, when compared to an external panel of embryologists, our algorithm results in a 12% increase of positive predictive value and a 29% increase of negative predictive value.
+Added
+2022-03-21
+Last modified
+2022-03-21
+Source
+:
+David H Silver
+Preferred source (of 2)‎
+Intel® RealSense™ SR300 Coded Light Depth Camera
+IEEE Transactions on Pattern Analysis and Machine Intelligence
+2020-10-01 | Journal article
+DOI: 10.1109/tpami.2019.2915841
+Part of ISSN: 0162-8828
+Part of ISSN: 2160-9292
+Part of ISSN: 1939-3539
+Show less detail
+Homepage URL
+http://dx.doi.org/10.1109/tpami.2019.2915841
+Citation (bibtex)
+Show citation
+Added
+2022-03-21
+Last modified
+2022-03-21
+Source
+:
+David H Silver
+Preferred source (of 2)‎
+Author Correction: The mid-developmental transition and the evolution of animal body plans (Nature, (2016), 531, 7596, (637-641), 10.1038/nature16994)
+Nature
+2019 | Journal article
+DOI: 10.1038/s41586-019-1698-x
+EID: 2-s2.0-85074901731
+Part of ISSN: 00280836 14764687
+Contributors: Levin, M.; Anavy, L.; Cole, A.G.; Winter, E.; Mostov, N.; Khair, S.; Senderovich, N.; Kovalev, E.; Silver, D.H.; Feder, M. et al.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-85074901731&partnerID=MN8TOARS
+Contributors
+Levin, M.
+
+Anavy, L.
+
+Cole, A.G.
+
+Winter, E.
+
+Mostov, N.
+
+Khair, S.
+
+Senderovich, N.
+
+Kovalev, E.
+
+Silver, D.H.
+
+Feder, M.
+
+Fernandez-Valverde, S.L.
+
+Nakanishi, N.
+
+Simmons, D.
+
+Simakov, O.
+
+Larsson, T.
+
+Liu, S.-Y.
+
+Jerafi-Vider, A.
+
+Yaniv, K.
+
+Ryan, J.F.
+
+Martindale, M.Q.
+
+Rink, J.C.
+
+Arendt, D.
+
+Degnan, S.M.
+
+Degnan, B.M.
+
+Hashimshony, T.
+
+Yanai, I.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+The gene regulatory program of Acrobeloides nanus reveals conservation of phylum-specific expression
+Proceedings of the National Academy of Sciences of the United States of America
+2018 | Journal article
+DOI: 10.1073/pnas.1720817115
+EID: 2-s2.0-85045954853
+Part of ISSN: 00278424 10916490
+Contributors: Schiffer, P.H.; Polsky, A.L.; Cole, A.G.; Camps, J.I.R.; Kroiher, M.; Silver, D.H.; Grishkevich, V.; Anavy, L.; Koutsovoulos, G.; Hashimshony, T. et al.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-85045954853&partnerID=MN8TOARS
+Contributors
+Schiffer, P.H.
+
+Polsky, A.L.
+
+Cole, A.G.
+
+Camps, J.I.R.
+
+Kroiher, M.
+
+Silver, D.H.
+
+Grishkevich, V.
+
+Anavy, L.
+
+Koutsovoulos, G.
+
+Hashimshony, T.
+
+Yanai, I.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+The mid-developmental transition and the evolution of animal body plans
+Nature
+2016 | Journal article
+DOI: 10.1038/nature16994
+EID: 2-s2.0-84962360196
+Part of ISSN: 00280836 14764687
+Contributors: Levin, M.; Anavy, L.; Cole, A.G.; Winter, E.; Mostov, N.; Khair, S.; Senderovich, N.; Kovalev, E.; Silver, D.H.; Feder, M. et al.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-84962360196&partnerID=MN8TOARS
+Contributors
+Levin, M.
+
+Anavy, L.
+
+Cole, A.G.
+
+Winter, E.
+
+Mostov, N.
+
+Khair, S.
+
+Senderovich, N.
+
+Kovalev, E.
+
+Silver, D.H.
+
+Feder, M.
+
+Fernandez-Valverde, S.L.
+
+Nakanishi, N.
+
+Simmons, D.
+
+Simakov, O.
+
+Larsson, T.
+
+Liu, S.-Y.
+
+Jerafi-Vider, A.
+
+Yaniv, K.
+
+Ryan, J.F.
+
+Martindale, M.Q.
+
+Rink, J.C.
+
+Arendt, D.
+
+Degnan, S.M.
+
+Degnan, B.M.
+
+Hashimshony, T.
+
+Yanai, I.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Preferred source (of 2)‎
+ELOPER: Elongation of paired-end reads as a pre-processing tool for improved de novo genome assembly
+Bioinformatics
+2013 | Journal article
+DOI: 10.1093/bioinformatics/btt169
+EID: 2-s2.0-84878338848
+Part of ISSN: 13674803 14602059
+Contributors: Silver, D.H.; Ben-Elazar, S.; Bogoslavsky, A.; Yanai, I.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-84878338848&partnerID=MN8TOARS
+Contributors
+Silver, D.H.
+
+Ben-Elazar, S.
+
+Bogoslavsky, A.
+
+Yanai, I.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Preferred source (of 2)‎
+A novel lineage of myoviruses infecting cyanobacteria is widespread in the oceans
+Proceedings of the National Academy of Sciences of the United States of America
+2012 | Journal article
+DOI: 10.1073/pnas.1115467109
+EID: 2-s2.0-84857131687
+Part of ISSN: 00278424 10916490
+Contributors: Sabehi, G.; Shaulov, L.; Silver, D.H.; Yanai, I.; Harel, A.; Lindell, D.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-84857131687&partnerID=MN8TOARS
+Contributors
+Sabehi, G.
+
+Shaulov, L.
+
+Silver, D.H.
+
+Yanai, I.
+
+Harel, A.
+
+Lindell, D.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Preferred source (of 2)‎
+Identifying functional links between genes by evolutionary transcriptomics
+Molecular Biosystems
+2012 | Journal article
+DOI: 10.1039/c2mb25054c
+EID: 2-s2.0-84865765612
+Part of ISSN: 1742206X 17422051
+Contributors: Silver, D.H.; Levin, M.; Yanai, I.
+Show less detail
+Homepage URL
+http://www.scopus.com/inward/record.url?eid=2-s2.0-84865765612&partnerID=MN8TOARS
+Contributors
+Silver, D.H.
+
+Levin, M.
+
+Yanai, I.
+
+Citation (bibtex)
+Show citation
+Added
+2025-08-05
+Last modified
+2025-08-05
+Source
+:
+David H Silver via Scopus - Elsevier
+Preferred source (of 2)‎
+Peer review (3 reviews for 2 publications/grants)
+Review activity for Image and vision computing. (2)
+Review activity for Proceedings of the National Academy of Sciences of the United States of America. (1)
+How many people are using ORCID?
+Orcid
+Linkedin (opens in a new tab)
+Bluesky (opens in a new tab)
+Facebook (opens in a new tab)
+Mastodon (opens in a new tab)
+Youtube (opens in a new tab)
+Vimeo (opens in a new tab)
+Github (opens in a new tab)
+RSS (opens in a new tab)
+public domain The text of this website is published under a CC0 license. ORCID™, the ORCID logo, and the iD logo are trademarks of ORCID, Inc. ORCID is registered in the US and other jurisdictions.
+
+About ORCID
+Privacy Policy
+Terms of Use
+Accessibility Statement
+ORCID Help Center
+Dispute procedures
+Brand Guidelines
+Cookie Settings
+

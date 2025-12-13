@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Machine Code",
+    "era": "1950s",
+    "loc": 45,
+    "binary_size_bytes": 180,
+    "ram_runtime_bytes": 64,
+    "latency_us": 0.004,
+    "dev_time_min": 180,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  },
+  {
+    "name": "Assembly",
+    "era": "1960s",
+    "loc": 35,
+    "binary_size_bytes": 196,
+    "ram_runtime_bytes": 96,
+    "latency_us": 0.008,
+    "dev_time_min": 90,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  },
+  {
+    "name": "C",
+    "era": "1970s",
+    "loc": 15,
+    "binary_size_bytes": 1024,
+    "ram_runtime_bytes": 512,
+    "latency_us": 0.05,
+    "dev_time_min": 15,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  },
+  {
+    "name": "C++",
+    "era": "1980s",
+    "loc": 20,
+    "binary_size_bytes": 4096,
+    "ram_runtime_bytes": 2048,
+    "latency_us": 0.1,
+    "dev_time_min": 12,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  },
+  {
+    "name": "MicroPython",
+    "era": "2010s",
+    "loc": 8,
+    "binary_size_bytes": 262144,
+    "ram_runtime_bytes": 98304,
+    "latency_us": 500,
+    "dev_time_min": 5,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  },
+  {
+    "name": "LLM (GPT-4)",
+    "era": "2020s",
+    "loc": 1,
+    "binary_size_bytes": 350000000000,
+    "ram_runtime_bytes": 100000000000,
+    "latency_us": 2000000,
+    "dev_time_min": 1,
+    "can_run_on_mcu": false,
+    "requires_cloud": true
+  },
+  {
+    "name": "Embino (GC-SLM)",
+    "era": "2025",
+    "loc": 1,
+    "binary_size_bytes": 15000000,
+    "ram_runtime_bytes": 16384,
+    "latency_us": 50000,
+    "dev_time_min": 1,
+    "can_run_on_mcu": true,
+    "requires_cloud": false
+  }
+]
