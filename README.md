@@ -10,6 +10,8 @@ Parent repository containing all website projects as submodules.
 | embino.com | https://embino.com | [embino-site](https://github.com/silverdavi/embino-site) |
 | kernel-keys.com | https://kernel-keys.com | [kernel-keys-site](https://github.com/silverdavi/kernel-keys-site) |
 | unpop.info | https://unpop.info | [unpop-site](https://github.com/silverdavi/unpop-site) |
+| vax.ninja | https://vax.ninja | [vax-ninja-site](https://github.com/silverdavi/vax-ninja-site) |
+| freshsilver.net | https://freshsilver.net | [freshsilver-site](https://github.com/silverdavi/freshsilver-site) |
 
 ## Setup
 

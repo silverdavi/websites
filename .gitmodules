@@ -10,3 +10,9 @@
 [submodule "unpop-site"]
 	path = unpop-site
 	url = https://github.com/silverdavi/unpop-site.git
+[submodule "vax-ninja-site"]
+	path = vax-ninja-site
+	url = https://github.com/silverdavi/vax-ninja-site.git
+[submodule "freshsilver-site"]
+	path = freshsilver-site
+	url = https://github.com/silverdavi/freshsilver-site.git

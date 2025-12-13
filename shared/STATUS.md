@@ -12,6 +12,8 @@
 | dhsilver.me | ✅ Live | Dark | #F4A261 amber |
 | kernel-keys.com | ✅ Live | Light | #00D4AA teal |
 | embino.com | ✅ Live | Dark/terminal | #33FF33 green |
+| vax.ninja | 🚧 WIP | Dark/retro | #FF6B9D pink |
+| freshsilver.net | 🚧 WIP | Light/fresh | #0EA5E9 sky blue |
 
 ---
 
@@ -121,6 +123,8 @@ jobs:
 | dhsilver.me | #0D0D0D | #E8E8E8 | #F4A261 | Bricolage Grotesque | Geist |
 | kernel-keys.com | #FAFAFA | #0A0A0A | #00D4AA | Syne | DM Sans |
 | embino.com | #0C0C0C | #33FF33 | #FF6B35 | IBM Plex Sans | IBM Plex Mono |
+| vax.ninja | #1a0a2e | #E8E8E8 | #FF6B9D | Press Start 2P | VT323 |
+| freshsilver.net | #F8FAFC | #1E293B | #0EA5E9 | Space Grotesk | Inter |
 
 ---
 
@@ -270,3 +274,62 @@ Site establishes breadth of business activities for legitimacy:
 - [ ] Add dev log / blog section
 - [ ] Demo videos / GIFs
 - [ ] More generated images (robot closeup, PCB macro)
+
+---
+
+## vax.ninja — Anti-Vaxxer Satire Game
+
+**Status:** 🚧 Work in Progress  
+**URL:** https://vax.ninja  
+**Repo:** [silverdavi/vax-ninja-site](https://github.com/silverdavi/vax-ninja-site)
+
+### Concept
+A satirical Pacman-style game where you play as an anti-vaxxer running from a doctor trying to vaccinate you. Goal: catch diseases before getting vaccinated. Each disease adds debuffs:
+
+- **COVID-19:** Need O₂ packs every round
+- **Measles:** Vision blur effect
+- **Polio:** Speed -50%
+- **Smallpox:** One-hit KO
+- **Tetanus:** Random freeze
+- **Whooping Cough:** Can't stop moving
+
+### Design
+- Dark retro aesthetic with scanlines
+- Fonts: Press Start 2P (headings), VT323 (body)
+- Colors: Purple/pink/neon (#1a0a2e bg, #FF6B9D accent, #39FF14 virus green)
+
+### TODO / Ideas
+- [ ] Build actual game engine (Canvas/WebGL)
+- [ ] Level progression system
+- [ ] Sound effects and music
+- [ ] High score leaderboard
+- [ ] Mobile controls
+
+---
+
+## freshsilver.net — Travel Plans & Blog
+
+**Status:** 🚧 Work in Progress  
+**URL:** https://freshsilver.net  
+**Repo:** [silverdavi/freshsilver-site](https://github.com/silverdavi/freshsilver-site)
+
+### Concept
+A personal travel site to share trip plans with friends. Shows upcoming adventures, ongoing trips, and past adventures with photos and stories.
+
+### Features
+- Trip cards with dates, locations, descriptions, and tags
+- Status: upcoming, ongoing, past
+- Photo galleries per trip
+- Blog-style writeups
+
+### Design
+- Light, fresh, modern aesthetic
+- Fonts: Space Grotesk (headings), Inter (body)
+- Colors: Sky blue accent (#0EA5E9), clean whites and grays
+
+### TODO / Ideas
+- [ ] Add actual trip data
+- [ ] Photo gallery component
+- [ ] Blog/story pages per trip
+- [ ] Map visualization
+- [ ] Share links for friends

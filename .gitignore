@@ -5,5 +5,15 @@
 .idea/
 *.swp
 
+# Environment files
+.env
+**/.env
+
 # Node (in case any gets here)
 node_modules/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+venv/
