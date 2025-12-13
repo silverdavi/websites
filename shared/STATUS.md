@@ -1,6 +1,6 @@
 # Website Projects — Status & Ideation
 
-*Last updated: 2025-11-30*
+*Last updated: 2025-12-13*
 
 ---
 
@@ -12,8 +12,8 @@
 | dhsilver.me | ✅ Live | Dark | #F4A261 amber |
 | kernel-keys.com | ✅ Live | Light | #00D4AA teal |
 | embino.com | ✅ Live | Dark/terminal | #33FF33 green |
-| vax.ninja | 🚧 WIP | Dark/retro | #FF6B9D pink |
-| freshsilver.net | 🚧 WIP | Light/fresh | #0EA5E9 sky blue |
+| vax.ninja | ✅ Live | Dark/retro | #FF6B9D pink |
+| freshsilver.net | ✅ Live | Light/fresh | #0EA5E9 sky blue |
 
 ---
 
@@ -101,7 +101,7 @@ jobs:
 ❌ **Common mistake:** If source is "Deploy from a branch", GitHub serves root `index.html` (Vite dev entry with `/src/main.tsx`) instead of built artifact → MIME type errors.
 
 ### DNS (Route 53)
-- All 4 domains: A records → GitHub Pages IPs (`185.199.108-111.153`)
+- All 6 domains: A records → GitHub Pages IPs (`185.199.108-111.153`)
 - CNAME for www → `silverdavi.github.io`
 - Setup script: `shared/setup-dns.sh`
 
@@ -279,9 +279,15 @@ Site establishes breadth of business activities for legitimacy:
 
 ## vax.ninja — Anti-Vaxxer Satire Game
 
-**Status:** 🚧 Work in Progress  
+**Status:** ✅ LIVE (landing page)  
 **URL:** https://vax.ninja  
 **Repo:** [silverdavi/vax-ninja-site](https://github.com/silverdavi/vax-ninja-site)
+
+### Current State
+- Landing page with game concept teaser
+- Disease level previews (COVID-19, Measles, Polio, Smallpox, Tetanus, Whooping Cough)
+- Satirical messaging with pro-vaccine disclaimer
+- Retro arcade aesthetic with scanlines and flicker effects
 
 ### Concept
 A satirical Pacman-style game where you play as an anti-vaxxer running from a doctor trying to vaccinate you. Goal: catch diseases before getting vaccinated. Each disease adds debuffs:
@@ -309,18 +315,29 @@ A satirical Pacman-style game where you play as an anti-vaxxer running from a do
 
 ## freshsilver.net — Travel Plans & Blog
 
-**Status:** 🚧 Work in Progress  
+**Status:** ✅ LIVE  
 **URL:** https://freshsilver.net  
 **Repo:** [silverdavi/freshsilver-site](https://github.com/silverdavi/freshsilver-site)
 
-### Concept
-A personal travel site to share trip plans with friends. Shows upcoming adventures, ongoing trips, and past adventures with photos and stories.
+### Current State
+- Featured trip: Israel New Year's 2025-2026 (Dec 29 – Jan 2)
+- Day-by-day itinerary with events, times, and locations
+- Countdown to departure (auto-updates to "Currently traveling" / "Trip complete")
+- Trip highlights section (NYE Karaoke, Snooker, Family)
+- Clickable map links for locations
 
-### Features
-- Trip cards with dates, locations, descriptions, and tags
-- Status: upcoming, ongoing, past
-- Photo galleries per trip
-- Blog-style writeups
+### Current Trip: Israel NYE 2025
+| Day | Route | Highlights |
+|-----|-------|------------|
+| Dec 29 | JFK → TLV | ✈️ Flight LY10 |
+| Dec 30 | Safed → Haifa | 👨‍👩‍👧 Family, 🍻 Irrelevant Group |
+| Dec 31 | Haifa → Tel Aviv | 🎱 Dan Snooker Club, 🎤 BitBox Karaoke (13 friends) |
+| Jan 1 | Central → Airport | 👤 Visits (Amos, Rafi, Perl), ✈️ Flight home |
+| Jan 2 | JFK → Home | 🛬 Land, rest |
+
+### Data Sources
+- `rawplan/rawplan.tsv` — Trip itinerary spreadsheet
+- `rawplan/karaoke.txt` — BitBox booking confirmation (Hebrew)
 
 ### Design
 - Light, fresh, modern aesthetic
@@ -328,8 +345,8 @@ A personal travel site to share trip plans with friends. Shows upcoming adventur
 - Colors: Sky blue accent (#0EA5E9), clean whites and grays
 
 ### TODO / Ideas
-- [ ] Add actual trip data
 - [ ] Photo gallery component
 - [ ] Blog/story pages per trip
 - [ ] Map visualization
 - [ ] Share links for friends
+- [ ] Past trips archive
