@@ -16,3 +16,6 @@
 [submodule "freshsilver-site"]
 	path = freshsilver-site
 	url = https://github.com/silverdavi/freshsilver-site.git
+[submodule "theinvariant-site"]
+	path = theinvariant-site
+	url = https://github.com/silverdavi/theinvariant-site.git

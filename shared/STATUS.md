@@ -1,6 +1,6 @@
 # Website Projects — Status & Ideation
 
-*Last updated: 2025-12-13*
+*Last updated: 2025-12-14*
 
 ---
 
@@ -14,6 +14,7 @@
 | embino.com | ✅ Live | Dark/terminal | #33FF33 green |
 | vax.ninja | ✅ Live | Dark/retro | #FF6B9D pink |
 | freshsilver.net | ✅ Live | Light/fresh | #0EA5E9 sky blue |
+| theinvariant.org | 🚧 New | Light/vintage | #8B4513 saddle brown |
 
 ---
 
@@ -125,6 +126,7 @@ jobs:
 | embino.com | #0C0C0C | #33FF33 | #FF6B35 | IBM Plex Sans | IBM Plex Mono |
 | vax.ninja | #1a0a2e | #E8E8E8 | #FF6B9D | Press Start 2P | VT323 |
 | freshsilver.net | #F8FAFC | #1E293B | #0EA5E9 | Space Grotesk | Inter |
+| theinvariant.org | #FDFBF7 | #2C2416 | #8B4513 | Playfair Display | Source Sans 3 |
 
 ---
 
@@ -350,3 +352,49 @@ A satirical Pacman-style game where you play as an anti-vaxxer running from a do
 - [ ] Map visualization
 - [ ] Share links for friends
 - [ ] Past trips archive
+
+---
+
+## theinvariant.org — Ideas Magazine
+
+**Status:** 🚧 NEW (planning)  
+**URL:** https://theinvariant.org  
+**Repo:** [silverdavi/theinvariant-site](https://github.com/silverdavi/theinvariant-site)
+
+> ⚠️ **Different tech stack** — see `shared/theinvariant/TECH_STACK.md`
+
+### Tech Stack (unique to this site)
+
+| Layer | Choice |
+|-------|--------|
+| Framework | Next.js (App Router) + TypeScript |
+| CMS | Sanity |
+| Interactive | PixiJS v8 (map, scratch/reveal) |
+| Animation | GSAP |
+| State | Zustand + IndexedDB |
+| Styling | Tailwind + shadcn/ui |
+| Search | Meilisearch (on EC2) |
+| Backend | EC2 (Node.js + Postgres) |
+| Frontend | Static (EC2 or S3+CloudFront) |
+
+### Concept
+A magazine exploring "constants amidst chaos" — science, philosophy, culture. Two modes:
+1. **Exploration mode** — interactive map, scratch/reveal, playful discovery
+2. **Reading mode** — clean, fast, typographically stable articles
+
+### Design
+- Light, warm, vintage aesthetic with cream background (#FDFBF7)
+- Fonts: Playfair Display (display), Cormorant Garamond (headings), Source Sans 3 (body)
+- Colors: Saddle brown accent (#8B4513), deep charcoal text (#2C2416)
+- Mobile-first, 60fps target, offline-tolerant
+
+### Content Model (Graph)
+- `Issue` → `Node` → `Story` | `Media` | `Puzzle` | `CriticReview` | `LinkCard`
+- Nonlinear traversal via relationships
+
+### TODO
+- [ ] Define content graph schema (Sanity)
+- [ ] Define map scene contract (node rendering, linking, revealing)
+- [ ] Scaffold Next.js project
+- [ ] Setup Sanity studio
+- [ ] Setup Vercel + DNS

@@ -1,19 +1,61 @@
 # OS
 .DS_Store
+Thumbs.db
 
 # IDE
 .idea/
+.vscode/
 *.swp
+*.swo
+*~
 
 # Environment files
 .env
+.env.*
 **/.env
+**/.env.*
 
-# Node (in case any gets here)
+# Node
 node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+.next/
+**/.next/
+out/
+**/out/
 
 # Python
 __pycache__/
 **/__pycache__/
 *.pyc
+*.pyo
+*.pyd
 venv/
+.venv/
+*.egg-info/
+
+# AWS
+.aws-sam/
+**/.aws-sam/
+samconfig.toml
+**/samconfig.toml
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Temp files
+*.tmp
+*.temp
+.cache/
