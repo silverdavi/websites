@@ -12,6 +12,7 @@ Parent repository containing all website projects as submodules.
 | unpop.info | https://unpop.info | [unpop-site](https://github.com/silverdavi/unpop-site) |
 | vax.ninja | https://vax.ninja | [vax-ninja-site](https://github.com/silverdavi/vax-ninja-site) |
 | freshsilver.net | https://freshsilver.net | [freshsilver-site](https://github.com/silverdavi/freshsilver-site) |
+| theinvariant.org | https://theinvariant.org | [theinvariant-site](https://github.com/silverdavi/theinvariant-site) |
 
 ## Setup
 
