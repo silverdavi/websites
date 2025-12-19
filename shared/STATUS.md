@@ -1,6 +1,6 @@
 # Website Projects — Status & Ideation
 
-*Last updated: 2025-12-14*
+*Last updated: 2025-12-19*
 
 ---
 
@@ -10,7 +10,7 @@
 |------|--------|--------|---------------|
 | unpop.info | ✅ Live | Light/paper | #C84B31 brick red |
 | dhsilver.me | ✅ Live | Dark | #F4A261 amber |
-| kernel-keys.com | ✅ Live | Light | #00D4AA teal |
+| kernel-keys.com | ✅ Live | Dark/glass | #D4A574 amber |
 | embino.com | ✅ Live | Dark/terminal | #33FF33 green |
 | vax.ninja | ✅ Live | Dark/retro | #FF6B9D pink |
 | freshsilver.net | ✅ Live | Light/fresh | #0EA5E9 sky blue |
@@ -122,7 +122,7 @@ jobs:
 |------|------------|------|--------|--------------|-----------|
 | unpop.info | #FFFEF5 | #1A1A1A | #C84B31 | Literata | Source Serif 4 |
 | dhsilver.me | #0D0D0D | #E8E8E8 | #F4A261 | Bricolage Grotesque | Geist |
-| kernel-keys.com | #FAFAFA | #0A0A0A | #00D4AA | Syne | DM Sans |
+| kernel-keys.com | #1A1616 | #FDFBF7 | #D4A574 | Clash Display | Satoshi |
 | embino.com | #0C0C0C | #33FF33 | #FF6B35 | IBM Plex Sans | IBM Plex Mono |
 | vax.ninja | #1a0a2e | #E8E8E8 | #FF6B9D | Press Start 2P | VT323 |
 | freshsilver.net | #F8FAFC | #1E293B | #0EA5E9 | Space Grotesk | Inter |
@@ -194,38 +194,39 @@ jobs:
 **Repo:** [silverdavi/kernel-keys-site](https://github.com/silverdavi/kernel-keys-site)
 
 ### Current State
-- Full React site with professional consulting aesthetic (light mode, Syne + DM Sans)
-- Tab-based navigation: Services, Research, Ventures
-- Generated images (Gemini 3 Pro): neural network hero, research area visualizations
+- Full React site with **warm dark glassmorphism** aesthetic
+- Fonts: Clash Display (display), Cabinet Grotesk (headings), Satoshi (body), JetBrains Mono (code)
+- Colors: Dark brown-black (#1A1616), cream text (#FDFBF7), amber accent (#D4A574)
+- Glassmorphism cards with backdrop blur
+- Mesh gradient background
+- Scroll-reveal animations
+- Animated stat counters in hero
+- SVG icons replacing emojis
 - Rich content with clickable DOI links and patent numbers
-- Contact section with ORCID/Scopus IDs
+- Contact: david@remiza.ai, ORCID/Scopus IDs
 
-### Tabs / Sections
-- **Hero:** Neural network visualization background, stats (12+ pubs, 14+ patents, 6 ventures)
-- **Services:** 4 cards with detailed bullet lists (ML Engineering, Data Systems, Research Collab, Product R&D)
-- **Research:** 4 areas with images + clickable publication links
+### Sections
+- **Hero:** Animated stats (12+ pubs, 14+ patents, 8 ventures), mesh gradient background
+- **Services:** 4 glass cards with SVG icons (ML Engineering, Data Systems, Research Collab, Product R&D)
+- **Research:** 4 areas with clickable publication links
   - Geometric ML & Computer Vision (IEEE TPAMI, MIDL, AIiH)
-  - Behavioral & Social Research (PLOS ONE, WILTY)
+  - Behavioral & Social Research (PLOS ONE)
   - Computational Biology (Nature, PNAS, Bioinformatics)
   - Food Technology (4 patents with Google Patents links)
-- **Ventures:** 6 venture cards + full patent portfolio organized by company
-  - Rhea Labs, Canotera, AKA Foods, Embryonics, Unpopular Science, Autonomous Food Systems
-  - 14 patents with clickable links (Intel, Apple, Embryonics, AKA Foods)
-- **Contact:** Email CTA, ORCID/Scopus IDs, social links
+- **Ventures:** Timeline layout with company cards + Publications section
+  - Rhea Labs, Canotera, AKA Foods, Embryonics, Autonomous Food Systems
+  - **Publications:** 3 book cards with cover images
+    - The Excluded Middle (dichotomies.me)
+    - Unpopular Science (unpop.info)
+    - Silver Cooks (silvercooks.com)
+  - Patent Portfolio: 14 patents organized by company (Intel, Apple, Embryonics, AKA Foods)
+- **Contact:** Email CTA (david@remiza.ai), ORCID link, social links
 - **Footer:** Logo, copyright
 
-### Generated Assets
-- `hero_neural.png` — Neural network/knowledge graph visualization (hero background)
-- `research_geometric.png` — Geometric ML/manifold wireframe
-- `research_social.png` — Social network analysis graph
-- `research_bio.png` — DNA/computational biology visualization
-- `research_food.png` — Molecular gastronomy/chemistry visualization
-- `venture_isometric.png` — Isometric interconnected systems (ventures banner)
-
-### Image Generation
-- Script: `shared/KERNELKEYS/generate_kernel_images.py`
-- Run from: `shared/SBIR/code/` (uses venv and .env with GOOGLE_API_KEY)
-- Model: `gemini-3-pro-image-preview`
+### Book Cover Assets
+- `book_dichotomies.jpg` — The Excluded Middle cover
+- `book_unpopular.jpg` — Unpopular Science collage
+- `book_silvercooks.jpg` — Silver Cooks food spread
 
 ### Strategic Purpose
 Site establishes breadth of business activities for legitimacy:
@@ -235,9 +236,12 @@ Site establishes breadth of business activities for legitimacy:
 - All with real DOI links and patent numbers as evidence
 
 ### TODO / Ideas
+- [x] Modern dark theme redesign
+- [x] Glassmorphism UI
+- [x] Scroll-reveal animations
+- [x] Book cover cards section
 - [ ] Add case study cards with metrics
 - [ ] Newsletter signup
-- [ ] Client testimonials (if available)
 
 ---
 
