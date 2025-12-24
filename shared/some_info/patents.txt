@@ -1,3 +1,12 @@
+Systems and Methods for Automated Preparation of Granular Starch-Based Food Products via Hydro-Thermal Agitation with Closed-Loop Sensor Control
+Application number: 63/945,967
+Abstract: An automated apparatus and method for preparing granular starch-based foods such as couscous. The system combines microwave heating, circumferential fluid injection creating a radial hydration gradient, and vertical reciprocating agitation that separates granules without shear damage. A closed-loop control system uses torque rheometry and infrared temperature sensing to detect food state and adjust processing parameters in real time. The method comprises four phases: lipid intercalation, gradient hydration, gelatinization with de-agglomeration, and active retrogradation cooling. The apparatus produces artisan-quality couscous without manual intervention.
+Type: Provisional Application
+Filed: December 21, 2025
+Confirmation: 3258
+Inventor: Haim David Silver
+
+
 Enhanced depth mapping using visual inertial odometry
 Patent number: 12153140
 Abstract: Imaging apparatus (22) includes a radiation source (40), which emits pulsed beams (42) of optical radiation toward a target scene (24). An array (52) of sensing elements outputs signals indicative of respective times of incidence of photons on the sensing elements. Objective optics (54) form a first image of the target scene on the array of sensing elements. An image sensor (64) captures a second image of the target scene. Processing and control circuitry (56, 58) is configured to process the second image so as to detect a relative motion between at least one object in the target scene and the apparatus, and which is configured to construct, responsively to the signals from the array, histograms of the times of incidence of the photons on the sensing elements and to adjust the histograms responsively to the detected relative motion, and to generate a depth map of the target scene based on the adjusted histograms.
