@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .icon-text {
+        font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+        font-weight: 700;
+        font-size: 120px;
+        fill: #33FF33;
+      }
+    </style>
+  </defs>
+  
+  <!-- Dark background with rounded corners -->
+  <rect width="256" height="256" rx="32" ry="32" fill="#0C0C0C"/>
+  
+  <!-- "e_" as single text element for proper alignment -->
+  <text x="128" y="170" text-anchor="middle" class="icon-text">e_</text>
+</svg>

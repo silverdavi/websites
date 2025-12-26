@@ -235,11 +235,27 @@ Site establishes breadth of business activities for legitimacy:
 - Science communication → justifies educational material expenses
 - All with real DOI links and patent numbers as evidence
 
+### Floweer App Pages
+Sub-pages for the Floweer screensaver app (Apple TV, iPhone, iPad):
+- `/floweer` — Marketing landing page with vibrant fluid aesthetic
+- `/floweer/support` — Support page with FAQ, system requirements, privacy info
+
+**Design:** Different from main site — dark background with cyan/magenta/green gradients matching the app's colorful stained-glass blob visuals.
+
+**Assets:**
+- `floweer/icon.png` — App icon (1024x1024)
+- `floweer/01_Blob.png` — Screenshot of Blob mode
+- `floweer/02_Ink.png` — Screenshot of Ink mode
+- `floweer/03_Network.png` — Screenshot of Network mode
+- `floweer/04_Animals.png` — Screenshot of Animals mode
+
 ### TODO / Ideas
 - [x] Modern dark theme redesign
 - [x] Glassmorphism UI
 - [x] Scroll-reveal animations
 - [x] Book cover cards section
+- [x] Floweer app marketing page
+- [x] Floweer app support page
 - [ ] Add case study cards with metrics
 - [ ] Newsletter signup
 

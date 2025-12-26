@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text {
+        font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+        font-weight: 600;
+        font-size: 72px;
+        fill: #33FF33;
+      }
+    </style>
+  </defs>
+  
+  <!-- Logo text: embino_ -->
+  <text x="400" y="120" text-anchor="middle" class="logo-text">embino_</text>
+</svg>

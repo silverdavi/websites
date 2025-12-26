@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embino — Company Pitch Deck</title>
+  <style>
+    /* ═══════════════════════════════════════════════════════════════════
+       EMBINO PITCH DECK — WeasyPrint Optimized
+       Fixed dimensions, no flexbox for layout, explicit sizing
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    /* Page setup - Letter landscape */
+    @page {
+      size: letter landscape;
+      margin: 0;
+    }
+    
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Base typography */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #E8E8E8;
+      background: #0C0C0C;
+    }
+    
+    /* Monospace for code/labels */
+    .mono {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       SLIDE CONTAINER
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .slide {
+      width: 11in;
+      height: 8.5in;
+      padding: 0.6in 0.8in 0.7in 0.8in;
+      background: #0C0C0C;
+      page-break-after: always;
+      page-break-inside: avoid;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .slide:last-child {
+      page-break-after: auto;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       TYPOGRAPHY
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .slide-label {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      font-size: 11px;
+      color: #1a8a1a;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    
+    h1 {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      font-size: 56px;
+      font-weight: 600;
+      color: #33FF33;
+      margin-bottom: 16px;
+    }
+    
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #E8E8E8;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #E8E8E8;
+      margin-bottom: 12px;
+    }
+    
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #33FF33;
+      margin-bottom: 8px;
+    }
+    
+    p {
+      font-size: 15px;
+      color: #888888;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    
+    .text-green { color: #33FF33; }
+    .text-orange { color: #FF6B35; }
+    .text-cyan { color: #00FFCC; }
+    .text-white { color: #E8E8E8; }
+    .text-muted { color: #666666; }
+    .bold { font-weight: 600; }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       LAYOUT HELPERS - Using tables for reliable print layout
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .row {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    
+    .col {
+      display: table-cell;
+      vertical-align: top;
+      padding-right: 30px;
+    }
+    
+    .col:last-child {
+      padding-right: 0;
+    }
+    
+    .col-2 { width: 50%; }
+    .col-3 { width: 33.333%; }
+    
+    /* Spacing */
+    .mt-8 { margin-top: 8px; }
+    .mt-16 { margin-top: 16px; }
+    .mt-24 { margin-top: 24px; }
+    .mt-32 { margin-top: 32px; }
+    .mb-8 { margin-bottom: 8px; }
+    .mb-16 { margin-bottom: 16px; }
+    .mb-24 { margin-bottom: 24px; }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       LISTS
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul li {
+      font-size: 15px;
+      color: #888888;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.4;
+    }
+    
+    ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #33FF33;
+      font-weight: bold;
+    }
+    
+    ul.compact li {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       CARDS
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .card {
+      background: #1E1E1E;
+      border: 1px solid #2A2A2A;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    
+    .card.highlight {
+      border-color: #33FF33;
+      background: rgba(51, 255, 51, 0.05);
+    }
+    
+    .card p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       CODE BLOCK
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .code-block {
+      background: #1E1E1E;
+      border: 1px solid #1a8a1a;
+      border-radius: 4px;
+      padding: 16px 20px;
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      font-size: 14px;
+      color: #33FF33;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       TABLES
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    
+    .data-table th,
+    .data-table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid #2A2A2A;
+    }
+    
+    .data-table th {
+      color: #33FF33;
+      font-weight: 600;
+      background: #1E1E1E;
+      border-bottom: 2px solid #1a8a1a;
+    }
+    
+    .data-table td {
+      color: #888888;
+    }
+    
+    .data-table tr.highlight-row {
+      background: rgba(51, 255, 51, 0.08);
+    }
+    
+    .data-table tr.highlight-row td {
+      color: #33FF33;
+      font-weight: 600;
+    }
+    
+    .data-table tr.danger-row {
+      background: rgba(255, 107, 53, 0.08);
+    }
+    
+    .data-table tr.danger-row td {
+      color: #FF6B35;
+    }
+    
+    /* Spec table (key-value) */
+    .spec-table {
+      border: 1px solid #1a8a1a;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .spec-row {
+      padding: 10px 16px;
+      background: #1E1E1E;
+      border-bottom: 1px solid #2A2A2A;
+    }
+    
+    .spec-row:last-child {
+      border-bottom: none;
+    }
+    
+    .spec-row:nth-child(even) {
+      background: #0C0C0C;
+    }
+    
+    .spec-key {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      font-size: 11px;
+      color: #1a8a1a;
+      display: inline-block;
+      width: 55%;
+    }
+    
+    .spec-value {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      font-size: 13px;
+      color: #33FF33;
+      font-weight: 600;
+      display: inline-block;
+      width: 44%;
+      text-align: right;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       METRICS
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .metrics {
+      display: table;
+      width: 100%;
+      margin: 24px 0;
+    }
+    
+    .metric {
+      display: table-cell;
+      text-align: center;
+      padding: 0 20px;
+    }
+    
+    .metric-value {
+      font-size: 42px;
+      font-weight: 700;
+      color: #33FF33;
+      display: block;
+      margin-bottom: 6px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .metric-label {
+      font-size: 12px;
+      color: #666666;
+      display: block;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       TIMELINE
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .timeline-item {
+      background: #1E1E1E;
+      border-left: 3px solid #33FF33;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+    }
+    
+    .timeline-item h4 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    
+    .timeline-item p {
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.4;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       PIPELINE
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .pipeline {
+      display: table;
+      width: 100%;
+      margin: 24px 0;
+    }
+    
+    .pipeline-step {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      width: 20%;
+    }
+    
+    .pipeline-step .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    
+    .pipeline-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+    }
+    
+    .pipeline-step .label {
+      font-size: 13px;
+      color: #888888;
+    }
+    
+    .pipeline-arrow {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      width: 10%;
+      font-size: 24px;
+      color: #33FF33;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       EMPHASIS BOX
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .emphasis-box {
+      background: rgba(51, 255, 51, 0.08);
+      border: 2px solid #33FF33;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    
+    .emphasis-box p {
+      font-size: 16px;
+      color: #E8E8E8;
+      margin: 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       BADGES
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(51, 255, 51, 0.08);
+      border: 1px solid #1a8a1a;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #888888;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .slide-footer {
+      position: absolute;
+      bottom: 0.5in;
+      left: 0.8in;
+      right: 0.8in;
+      border-top: 1px solid #2A2A2A;
+      padding-top: 12px;
+      font-size: 13px;
+      color: #1a8a1a;
+    }
+    
+    .slide-footer .left {
+      float: left;
+    }
+    
+    .slide-footer .right {
+      float: right;
+    }
+    
+    .slide-footer .takeaway {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      color: #33FF33;
+      margin-left: 20px;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       HERO SPECIFIC
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .hero-content {
+      padding-top: 1.8in;
+      text-align: center;
+    }
+    
+    .hero-content h1 {
+      font-size: 64px;
+    }
+    
+    .tagline {
+      font-size: 24px;
+      color: #00FFCC;
+      margin-bottom: 16px;
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #888888;
+      max-width: 7in;
+      margin: 0 auto 24px auto;
+      line-height: 1.6;
+    }
+    
+    /* ═══════════════════════════════════════════════════════════════════
+       CTA SLIDE
+       ═══════════════════════════════════════════════════════════════════ */
+    
+    .cta-content {
+      padding-top: 1.2in;
+      text-align: center;
+    }
+    
+    .contact-info {
+      font-size: 18px;
+      color: #00FFCC;
+      margin-top: 32px;
+    }
+    
+    .contact-info p {
+      color: #00FFCC;
+      margin-bottom: 8px;
+    }
+    
+    .contact-info .links {
+      font-size: 14px;
+      color: #888888;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 1 — TITLE / HERO
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <div class="hero-content">
+      <h1>embino_</h1>
+      <p class="tagline">Tiny intelligence for tiny devices</p>
+      <p class="subtitle">
+        A middle-level programming stack that brings safe, deterministic logic 
+        to ESP32, Arduino, and any $1 microcontroller.
+      </p>
+      <div class="badge mt-24">
+        Patent Pending (US 63/927,859)
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | tiny_intelligence_</span></span>
+      <span class="right">1 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 2 — WHAT WE DO
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <div class="cta-content" style="padding-top: 1.5in;">
+      <p class="slide-label" style="text-align: center;">// what we do</p>
+      
+      <h2 style="font-size: 38px; margin-bottom: 40px; line-height: 1.3;">
+        A miniature GPT-style language model<br>
+        that runs on <span class="text-green">$1 microcontrollers</span>
+      </h2>
+      
+      <p style="font-size: 20px; color: #888888; max-width: 8in; margin: 0 auto 40px auto; line-height: 1.7;">
+        We fill the gap between <span class="text-orange bold">massive cloud-based LLMs</span> that can't run on devices, 
+        and <span class="text-white bold">tiny C++ code</span> that's painful to write.
+      </p>
+      
+      <div style="display: table; width: 100%; margin-top: 40px;">
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 20px;">
+          <p style="font-size: 36px; color: #FF6B35; margin-bottom: 8px;">100 GB</p>
+          <p style="font-size: 14px; color: #666;">Cloud LLMs</p>
+        </div>
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 20px;">
+          <p style="font-size: 48px; color: #33FF33; margin-bottom: 8px; font-weight: 700;">16 KB</p>
+          <p style="font-size: 14px; color: #33FF33;">Embino</p>
+        </div>
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 20px;">
+          <p style="font-size: 36px; color: #888888; margin-bottom: 8px;">512 B</p>
+          <p style="font-size: 14px; color: #666;">Raw C++</p>
+        </div>
+      </div>
+      
+      <p style="font-size: 16px; color: #00FFCC; margin-top: 50px;">
+        Natural language in → Verified bytecode out → Deterministic execution on-device
+      </p>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | gpt_for_microcontrollers_</span></span>
+      <span class="right">2 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 3 — THE PROBLEM
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// the problem</p>
+    <h2>Programming microcontrollers is stuck in 1985</h2>
+    
+    <div class="row mt-24">
+      <div class="col col-2">
+        <h3>Current Reality</h3>
+        <ul>
+          <li>Hand-written C/C++</li>
+          <li>Low-level memory management</li>
+          <li>Device-specific registers</li>
+          <li>Manual GPIO configuration</li>
+          <li>Painful debugging</li>
+          <li>Zero abstraction for intent</li>
+        </ul>
+      </div>
+      
+      <div class="col col-2">
+        <h3>Existing "Solutions"</h3>
+        <ul>
+          <li><span class="text-white bold">Python/MicroPython:</span> Heavy runtime, unpredictable</li>
+          <li><span class="text-white bold">LLMs:</span> Can't run on MCUs, nondeterministic</li>
+          <li><span class="text-white bold">Arduino libraries:</span> Still low-level C++</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="emphasis-box mt-32">
+      <p><span class="text-orange bold">Gap:</span> No middle-level abstraction between natural language and C code that is <span class="text-green bold">safe, deterministic, compact,</span> and runs on <span class="text-green bold">$1 microcontrollers</span></p>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | c++_is_painful_</span></span>
+      <span class="right">3 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 3 — THE ABSTRACTION GAP
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// the abstraction gap</p>
+    <h2>LLMs broke the pattern</h2>
+    
+    <p class="mt-8 mb-24">Every abstraction gain was <span class="text-white bold">proportional</span> — until LLMs required <span class="text-orange bold">6 million times more RAM</span> than C++</p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 30%;">Layer</th>
+          <th style="width: 35%;">RAM Usage</th>
+          <th style="width: 35%;">Runs on MCU?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Machine Code</td>
+          <td>64 B</td>
+          <td class="text-green">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>Assembly</td>
+          <td>96 B</td>
+          <td class="text-green">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>C / C++</td>
+          <td>2 KB</td>
+          <td class="text-green">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>MicroPython</td>
+          <td>96 KB</td>
+          <td style="color: #fbbf24;">⚠ Barely</td>
+        </tr>
+        <tr class="danger-row">
+          <td class="bold">LLM (GPT-4)</td>
+          <td class="bold">100 GB</td>
+          <td>✗ Cloud Only</td>
+        </tr>
+        <tr class="highlight-row">
+          <td class="bold">Embino</td>
+          <td class="bold">16 KB</td>
+          <td>✓ Yes</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | llms_broke_the_pattern_</span></span>
+      <span class="right">4 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 4 — THE SOLUTION
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// the solution</p>
+    <h2>Express intent, not implementation</h2>
+    
+    <p class="mb-16">Embino is a <span class="text-white bold">middle-level language</span> for embedded systems. Write rules in structured English. Get deterministic bytecode that runs on any microcontroller.</p>
+    
+    <div class="code-block">When motion is detected
+  after 22:00
+  and brightness < 30%
+then turn on lamp
+  for 120 seconds.</div>
+    
+    <div class="pipeline mt-32">
+      <div class="pipeline-step">
+        <img src="../images/icons/icon_write.png" class="pipeline-icon" alt="Write"/>
+        <div class="label">Human rules</div>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <img src="../images/icons/icon_gear.png" class="pipeline-icon" alt="Gear"/>
+        <div class="label">DSL + Validation</div>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <img src="../images/icons/icon_package.png" class="pipeline-icon" alt="Package"/>
+        <div class="label">Bytecode</div>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <img src="../images/icons/icon_plug.png" class="pipeline-icon" alt="Plug"/>
+        <div class="label">MCU execution</div>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | intent_not_implementation_</span></span>
+      <span class="right">5 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 5 — HOW IT WORKS
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// how it works</p>
+    <h2>Three components, one stack</h2>
+    
+    <div class="row mt-24">
+      <div class="col col-3">
+        <div class="card">
+          <h4>01 — The Language</h4>
+          <p>A tight, rule-oriented DSL for events, conditions, timers, and actions. Expressive enough for real behavior. Constrained enough to verify.</p>
+          <ul class="compact mt-8">
+            <li>Events & conditions</li>
+            <li>Thresholds & timers</li>
+            <li>Actions & state</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col col-3">
+        <div class="card">
+          <h4>02 — The Translator</h4>
+          <p>An offline model that converts your rules to DSL. It <em>rejects</em> ambiguous inputs — never guesses, never hallucinates.</p>
+          <ul class="compact mt-8">
+            <li>Ambiguity detection</li>
+            <li>Conflict checking</li>
+            <li>Static verification</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col col-3">
+        <div class="card highlight">
+          <h4>03 — The Runtime</h4>
+          <p>A tiny interpreter in C that runs on ESP32, Arduino, RP2040. Deterministic. Bounded. No surprises.</p>
+          <ul class="compact mt-8">
+            <li>&lt;64 KB Flash</li>
+            <li>&lt;16 KB RAM</li>
+            <li>&lt;20 ms latency</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | dsl_translator_runtime_</span></span>
+      <span class="right">6 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 6 — TECHNICAL SPECS
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// specifications</p>
+    <h2>Datasheet</h2>
+    
+    <div class="row mt-24">
+      <div class="col col-2">
+        <h3 class="mb-16">Performance Targets</h3>
+        <div class="spec-table">
+          <div class="spec-row">
+            <span class="spec-key">INTERPRETER_FLASH</span>
+            <span class="spec-value">≤ 64 KB</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">RUNTIME_RAM</span>
+            <span class="spec-value">≤ 16 KB</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">EVENT_LATENCY</span>
+            <span class="spec-value">≤ 20 ms</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">TRANSLATION_ACCURACY</span>
+            <span class="spec-value">≥ 80%</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">EXECUTION_MODEL</span>
+            <span class="spec-value">Deterministic</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col col-2">
+        <h3 class="mb-16">Target Hardware</h3>
+        <ul>
+          <li><span class="text-white bold">ESP32</span> — Primary platform</li>
+          <li><span class="text-white bold">Arduino Uno/Nano</span> — ATmega328P</li>
+          <li><span class="text-white bold">RP2040</span> — Raspberry Pi Pico</li>
+          <li><span class="text-white bold">Any MCU</span> with 16KB+ RAM</li>
+        </ul>
+        
+        <h3 class="mt-32 mb-16">Use Cases</h3>
+        <ul>
+          <li>Smart lighting & automation</li>
+          <li>Sensor alerts & monitoring</li>
+          <li>Robot behavior logic</li>
+          <li>Edge autonomy</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | 16kb_20ms_deterministic_</span></span>
+      <span class="right">7 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 7 — MARKET OPPORTUNITY
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// market opportunity</p>
+    <h2>Massive underserved market</h2>
+    
+    <div class="metrics">
+      <div class="metric">
+        <span class="metric-value">30-40B</span>
+        <span class="metric-label">MCU units shipped / year</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">$20-30B</span>
+        <span class="metric-label">IoT tooling market</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">$1.2T</span>
+        <span class="metric-label">Semiconductor market by 2030</span>
+      </div>
+    </div>
+    
+    <div class="row mt-24">
+      <div class="col col-2">
+        <h3 class="mb-16">Beachhead: Makers & Education</h3>
+        <ul>
+          <li>10M+ Arduino/ESP32/Pico boards sold yearly</li>
+          <li>Hobbyists frustrated with C++ complexity</li>
+          <li>STEM educators need accessible tools</li>
+          <li>Robotics clubs, hackathons, workshops</li>
+        </ul>
+      </div>
+      
+      <div class="col col-2">
+        <h3 class="mb-16">Scale: Industrial & Automotive</h3>
+        <ul>
+          <li>Appliances: HVAC, washers, coffee machines</li>
+          <li>Industrial: PLCs, sensors, factory automation</li>
+          <li>Automotive: subsystems, ECUs, ADAS</li>
+          <li>Every vertical still codes in C/C++</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="emphasis-box mt-24">
+      <p>Even <span class="text-green bold">0.1%</span> of MCU deployments = <span class="text-green bold">30-40 million units/year</span> addressable</p>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | 30_billion_mcus_</span></span>
+      <span class="right">8 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 8 — BUSINESS MODEL
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// business model</p>
+    <h2>Three-stage hardware roadmap</h2>
+    
+    <div class="timeline-item mt-24">
+      <h4>Stage 1 — Add-On Module (12-24 months)</h4>
+      <p><span class="text-white bold">Small external board</span> attaching via UART/I²C/SPI. Houses Embino runtime. Bridges old workflows with new system. Zero hardware changes to existing boards.</p>
+      <p class="mt-8"><span class="text-green bold">Revenue:</span> Dev boards, makers, robotics startups, schools</p>
+    </div>
+    
+    <div class="timeline-item">
+      <h4>Stage 2 — System-on-PCB (24-36 months)</h4>
+      <p><span class="text-white bold">Embino integrated on the same board</span> as MCU. Integrated interpreter. Standard pinout (Arduino/Pico style). Ready for industrial prototyping.</p>
+      <p class="mt-8"><span class="text-green bold">Revenue:</span> Volume dev-board sales, robotics kits, automation integrators</p>
+    </div>
+    
+    <div class="timeline-item">
+      <h4>Stage 3 — On-Board Chip (36+ months)</h4>
+      <p><span class="text-white bold">Custom MCU with Embino baked in.</span> ROM-resident interpreter. Bootloader integrated with toolchain. Custom SoB variants for OEMs.</p>
+      <p class="mt-8"><span class="text-green bold">Revenue:</span> Licensing to appliance manufacturers, industrial OEMs</p>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | addon_pcb_chip_</span></span>
+      <span class="right">9 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 9 — SBIR PHASE I PLAN
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// SBIR phase I</p>
+    <h2>12-month technical feasibility</h2>
+    
+    <p class="mb-24"><span class="text-white bold">Goal:</span> Prove technical feasibility and commercial interest (<span class="text-green">$300k, 12 months</span>)</p>
+    
+    <div class="row">
+      <div class="col col-2">
+        <h3 class="mb-16">Objectives</h3>
+        <ul>
+          <li><span class="text-white bold">DSL + Safety Model</span> — Define language, grammar, static semantics</li>
+          <li><span class="text-white bold">LLM Translator</span> — Build pipeline with ambiguity detection</li>
+          <li><span class="text-white bold">Micro-VM</span> — Implement interpreter on ESP32/Arduino</li>
+          <li><span class="text-white bold">User Validation</span> — Study with 8-10 participants</li>
+        </ul>
+      </div>
+      
+      <div class="col col-2">
+        <h3 class="mb-16">Deliverables</h3>
+        <ul>
+          <li>DSL spec document</li>
+          <li>Reference interpreter (Python)</li>
+          <li>LLM-assisted translator prototype</li>
+          <li>Micro-VM firmware (ESP32, Arduino)</li>
+          <li>3 demo applications with metrics</li>
+          <li>User study report</li>
+          <li>2+ letters of support</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="emphasis-box mt-24">
+      <p><span class="text-white bold">Success:</span> ≥80% translation accuracy • All demos within resource limits • Users complete tasks faster</p>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | 300k_12_months_</span></span>
+      <span class="right">10 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 10 — VISION & IP
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// vision & IP</p>
+    <h2>The next abstraction layer for 30 billion chips</h2>
+    
+    <div class="row mt-24">
+      <div class="col col-2">
+        <h3 class="mb-16">Why This Matters</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Every appliance, vehicle, and industrial machine runs MCUs programmed in 50-year-old languages. As AI transforms software development, embedded systems remain untouched — <span class="text-green bold">the largest category of compute still waiting for its abstraction revolution</span>.</p>
+        
+        <h3 class="mt-24 mb-16">End State</h3>
+        <ul>
+          <li>Embino runtime in every MCU</li>
+          <li>Natural language → verified bytecode</li>
+          <li>Standard for edge device behavior</li>
+          <li>OEM licensing across verticals</li>
+        </ul>
+      </div>
+      
+      <div class="col col-2">
+        <h3 class="mb-16">Protected Innovation</h3>
+        <ul>
+          <li>Grammar-constrained code generation</li>
+          <li>Formal safety model with bounded resources</li>
+          <li>Deterministic execution guarantees</li>
+          <li>NL→DSL→bytecode→MCU pipeline</li>
+        </ul>
+        
+        <div class="badge mt-16">Patent Pending (US 63/927,859) — 35 claims</div>
+        
+        <h3 class="mt-24 mb-16">No Direct Competition</h3>
+        <p style="font-size: 14px;">MicroPython: too heavy. Arduino: still C++. LLMs: can't run on-device. No one combines NL input with verified, deterministic MCU execution.</p>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | patent_pending_35_claims_</span></span>
+      <span class="right">11 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 11 — TEAM
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <p class="slide-label">// team</p>
+    <h2>Leadership & Organization</h2>
+    
+    <!-- Org Chart -->
+    <div style="display: table; width: 100%; margin: 20px 0;">
+      <!-- CEO Row -->
+      <div style="text-align: center; margin-bottom: 16px;">
+        <div class="card" style="display: inline-block; width: 280px; border-color: #33FF33; position: relative; padding-top: 20px;">
+          <img src="../images/team/david_silver.png" style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid #33FF33; margin-bottom: 8px;" alt="David Silver"/>
+          <h4 style="margin-bottom: 4px;">David H. Silver</h4>
+          <p style="font-size: 14px; color: #33FF33; margin-bottom: 0;">CEO / Founder</p>
+          <p style="font-size: 11px; color: #666; margin: 4px 0 0 0;">→ Transitioning to CTO when CEO hired</p>
+        </div>
+      </div>
+      
+      <!-- Connector line -->
+      <div style="text-align: center; color: #1a8a1a; font-size: 24px; margin: 8px 0;">┬</div>
+      
+      <!-- C-Suite Row -->
+      <div style="display: table; width: 100%;">
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 10px;">
+          <div class="card" style="border-style: dashed; border-color: #FF6B35;">
+            <h4 style="color: #FF6B35;">CEO</h4>
+            <p style="font-size: 12px; color: #888; margin: 0;">HIRING</p>
+            <p style="font-size: 11px; color: #666; margin: 4px 0 0 0;">Business strategy, fundraising</p>
+          </div>
+        </div>
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 10px;">
+          <div class="card" style="border-color: #00FFCC;">
+            <h4 style="color: #00FFCC;">CTO</h4>
+            <p style="font-size: 12px; color: #888; margin: 0;">David H. Silver</p>
+            <p style="font-size: 11px; color: #666; margin: 4px 0 0 0;">Technical vision, architecture</p>
+          </div>
+        </div>
+        <div style="display: table-cell; width: 33%; text-align: center; padding: 0 10px;">
+          <div class="card" style="border-style: dashed; border-color: #FF6B35;">
+            <h4 style="color: #FF6B35;">COO</h4>
+            <p style="font-size: 12px; color: #888; margin: 0;">HIRING</p>
+            <p style="font-size: 11px; color: #666; margin: 4px 0 0 0;">Finance, operations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Founder Background -->
+    <div class="row mt-16">
+      <div class="col col-2">
+        <h3 class="mb-8" style="font-size: 16px;">Founder Background</h3>
+        <ul class="compact">
+          <li>6 years embedded ML at <span class="text-white">Apple</span> & <span class="text-white">Intel RealSense</span></li>
+          <li>15 patents (depth sensing, ML, medical imaging)</li>
+          <li>12 publications: <span class="text-white">Nature</span>, IEEE TPAMI, PNAS</li>
+          <li>Co-founder/CTO <span class="text-white">Embryonics</span> (acquired 2023)</li>
+        </ul>
+      </div>
+      <div class="col col-2">
+        <h3 class="mb-8" style="font-size: 16px;">Experience Logos</h3>
+        <div style="display: table; width: 100%;">
+          <div style="display: table-cell; text-align: center; padding: 8px;">
+            <img src="../images/team/logo_apple.png" style="width: 48px; height: 48px;" alt="Apple"/>
+          </div>
+          <div style="display: table-cell; text-align: center; padding: 8px;">
+            <img src="../images/team/logo_intel.png" style="width: 48px; height: 48px;" alt="Intel"/>
+          </div>
+          <div style="display: table-cell; text-align: center; padding: 8px;">
+            <img src="../images/team/logo_nature.png" style="width: 48px; height: 48px;" alt="Nature"/>
+          </div>
+          <div style="display: table-cell; text-align: center; padding: 8px;">
+            <img src="../images/team/logo_embryonics.png" style="width: 48px; height: 48px;" alt="Embryonics"/>
+          </div>
+        </div>
+        <p style="font-size: 11px; color: #666; text-align: center; margin-top: 8px;">Kernel Keys LLC — Founded 2024, NY</p>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | 15_patents_startup_exit_</span></span>
+      <span class="right">12 / 13</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SLIDE 12 — CALL TO ACTION
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div class="slide">
+    <div class="cta-content">
+      <h2 style="font-size: 42px; margin-bottom: 24px;">Ready to bring intelligence to tiny devices</h2>
+      
+      <p style="font-size: 22px; color: #33FF33; margin-bottom: 32px;"><span class="bold">Seeking:</span> SBIR Phase I funding ($300k)</p>
+      
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-value">12</span>
+          <span class="metric-label">months to POC</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3</span>
+          <span class="metric-label">working demos</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">10+</span>
+          <span class="metric-label">user validation</span>
+        </div>
+      </div>
+      
+      <div class="contact-info">
+        <p class="bold" style="font-size: 20px;">David H. Silver</p>
+        <p>david@embino.com</p>
+        <p class="links">embino.com • kernel-keys.com • dhsilver.me</p>
+      </div>
+    </div>
+    
+    <div class="slide-footer">
+      <span class="left">embino.com<span class="takeaway"> | lets_build_</span></span>
+      <span class="right">13 / 13</span>
+    </div>
+  </div>
+
+</body>
+</html>
