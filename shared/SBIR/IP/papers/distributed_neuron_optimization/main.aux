@@ -1,0 +1,140 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction: The End of Determinism}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction: The End of Determinism}{section.1}{}}
+\newlabel{sec:intro@cref}{{[section][1][]1}{[1][1][]1}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The computing landscape: determinism vs.\ under-specification. \textbf  {Left:} The deterministic era (1950--2020) built stable abstraction layers from digital logic to high-level languages, all assuming reproducible semantics. \textbf  {Center:} Emerging under-specified architectures (analog, neuromorphic, optical, quantum, approximate, stochastic) break this assumption---they have no ISA, exhibit manufacturing variability, and require per-device calibration. Traditional compilation fails. \textbf  {Right:} These architectures offer compelling efficiency advantages but create a programming crisis. \textbf  {Bottom:} Hardware-in-the-loop optimization (our paradigm) resolves this by optimizing directly on physical hardware with LLM-driven generation and telemetry feedback.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:timeline}{{1}{2}{The computing landscape: determinism vs.\ under-specification. \textbf {Left:} The deterministic era (1950--2020) built stable abstraction layers from digital logic to high-level languages, all assuming reproducible semantics. \textbf {Center:} Emerging under-specified architectures (analog, neuromorphic, optical, quantum, approximate, stochastic) break this assumption---they have no ISA, exhibit manufacturing variability, and require per-device calibration. Traditional compilation fails. \textbf {Right:} These architectures offer compelling efficiency advantages but create a programming crisis. \textbf {Bottom:} Hardware-in-the-loop optimization (our paradigm) resolves this by optimizing directly on physical hardware with LLM-driven generation and telemetry feedback}{figure.1}{}}
+\newlabel{fig:timeline@cref}{{[figure][1][]1}{[1][2][]2}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}The Programming Crisis: Why Traditional Compilation Fails}{3}{section.2}\protected@file@percent }
+\newlabel{sec:crisis}{{2}{3}{The Programming Crisis: Why Traditional Compilation Fails}{section.2}{}}
+\newlabel{sec:crisis@cref}{{[section][2][]2}{[1][2][]3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}The Specification Gap}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Failure Mode 1: Non-Reproducible Execution}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Failure Mode 2: Environment-Dependent Semantics}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Failure Mode 3: Calibration-Dependent Correctness}{4}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Failure Mode 4: Stochastic Semantics}{4}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Failure Mode 5: Approximate Correctness}{4}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Why Existing Approaches Fail}{4}{subsection.2.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Manual Tuning.}{4}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Lookup Tables.}{4}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Monte Carlo Simulation.}{4}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Exhaustive Characterization.}{5}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Deterministic Abstraction.}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}The Compiler's Dilemma}{5}{subsection.2.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Complexity Analysis}{5}{subsection.2.9}\protected@file@percent }
+\newlabel{thm:intractability}{{2.7}{5}{Intractability of Deterministic Compilation}{theorem.2.7}{}}
+\newlabel{thm:intractability@cref}{{[theorem][7][2]2.7}{[1][5][]5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Failure modes of traditional compilation for under-specified architectures. All paths lead to the conclusion that a new paradigm is required.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:failure_modes}{{2}{6}{Failure modes of traditional compilation for under-specified architectures. All paths lead to the conclusion that a new paradigm is required}{figure.2}{}}
+\newlabel{fig:failure_modes@cref}{{[figure][2][]2}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}The Verification Crisis}{6}{subsection.2.10}\protected@file@percent }
+\newlabel{prop:verification}{{2.8}{6}{Verification Complexity}{theorem.2.8}{}}
+\newlabel{prop:verification@cref}{{[theorem][8][2]2.8}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Architectural Survey: Six Classes of Under-Specified Compute}{6}{section.3}\protected@file@percent }
+\newlabel{sec:architectures}{{3}{6}{Architectural Survey: Six Classes of Under-Specified Compute}{section.3}{}}
+\newlabel{sec:architectures@cref}{{[section][3][]3}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Analog and Mixed-Signal Circuits}{6}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{6}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{7}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case Study: Analog Matrix Multiplier.}{7}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Neuromorphic and Spiking Circuits}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{7}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{7}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case Study: Intel Loihi.}{8}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Optical Computing}{8}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{8}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{9}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case Study: Photonic Neural Network.}{9}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Quantum Computing}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{9}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{10}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case Study: Google Sycamore.}{10}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Approximate Computing}{10}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{10}{section*.18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Six classes of under-specified compute architectures. Despite diverse physical implementations, they share common programming challenges that traditional compilation cannot address.}}{11}{figure.3}\protected@file@percent }
+\newlabel{fig:architectures}{{3}{11}{Six classes of under-specified compute architectures. Despite diverse physical implementations, they share common programming challenges that traditional compilation cannot address}{figure.3}{}}
+\newlabel{fig:architectures@cref}{{[figure][3][]3}{[1][11][]11}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{11}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Stochastic and Probabilistic Logic}{11}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Programming Challenges.}{11}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why Traditional Compilation Fails.}{11}{section*.21}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Hardware-in-the-loop optimization architecture. The closed loop executes in milliseconds per iteration: an LLM generates grammar-constrained candidates, which are compiled to bytecode artifacts, deployed to physical hardware, and evaluated via real telemetry. Scores update a Bayesian posterior, which feeds into \emph  {search-space shaping}---the key innovation that allows the system to discover hardware-specific patterns not expressible in the original grammar.}}{12}{figure.4}\protected@file@percent }
+\newlabel{fig:optimization}{{4}{12}{Hardware-in-the-loop optimization architecture. The closed loop executes in milliseconds per iteration: an LLM generates grammar-constrained candidates, which are compiled to bytecode artifacts, deployed to physical hardware, and evaluated via real telemetry. Scores update a Bayesian posterior, which feeds into \emph {search-space shaping}---the key innovation that allows the system to discover hardware-specific patterns not expressible in the original grammar}{figure.4}{}}
+\newlabel{fig:optimization@cref}{{[figure][4][]4}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}A New Paradigm: Hardware-in-the-Loop Optimization}{12}{section.4}\protected@file@percent }
+\newlabel{sec:paradigm}{{4}{12}{A New Paradigm: Hardware-in-the-Loop Optimization}{section.4}{}}
+\newlabel{sec:paradigm@cref}{{[section][4][]4}{[1][11][]12}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The Optimization Loop}{12}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Search-Space Shaping}{12}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Theoretical Foundations}{13}{subsection.4.3}\protected@file@percent }
+\newlabel{thm:convergence}{{4.1}{13}{Convergence of Hardware-in-the-Loop Optimization}{theorem.4.1}{}}
+\newlabel{thm:convergence@cref}{{[theorem][1][4]4.1}{[1][13][]13}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Application: Distributed Artificial Neuron Nodes}{13}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion: Implications for Computing}{13}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{13}{Discussion: Implications for Computing}{section.5}{}}
+\newlabel{sec:discussion@cref}{{[section][5][]5}{[1][13][]13}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{The End of Deterministic Abstraction.}{13}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hardware-Software Co-Design Becomes Mandatory.}{13}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Calibration Becomes Part of Programming.}{13}{section*.24}\protected@file@percent }
+\bibstyle{plain}
+\bibcite{mead1989analog}{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distributed ANN-nodes for robotic sensing and control. \textbf  {Left:} A robotic hand with 50 ANN-nodes distributed across palm (pressure sensing) and fingers (slip detection), connected via I$^2$C nerve bus. \textbf  {Center:} Each ANN-node contains a sensor array, local MCU with ADC, and bus transceiver; per-node calibration $\theta _i$ adapts to manufacturing variation. \textbf  {Right:} The optimization interface runs the LLM-driven closed loop, receiving telemetry and pushing calibration updates. The system learns to grasp fragile objects through embodied optimization on the physical hardware.}}{14}{figure.5}\protected@file@percent }
+\newlabel{fig:robotic}{{5}{14}{Distributed ANN-nodes for robotic sensing and control. \textbf {Left:} A robotic hand with 50 ANN-nodes distributed across palm (pressure sensing) and fingers (slip detection), connected via I$^2$C nerve bus. \textbf {Center:} Each ANN-node contains a sensor array, local MCU with ADC, and bus transceiver; per-node calibration $\theta _i$ adapts to manufacturing variation. \textbf {Right:} The optimization interface runs the LLM-driven closed loop, receiving telemetry and pushing calibration updates. The system learns to grasp fragile objects through embodied optimization on the physical hardware}{figure.5}{}}
+\newlabel{fig:robotic@cref}{{[figure][5][]5}{[1][13][]14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Verification Requires Probabilistic Methods.}{14}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The Rise of Embodied Optimization.}{14}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{14}{Conclusion}{section.6}{}}
+\newlabel{sec:conclusion@cref}{{[section][6][]6}{[1][14][]14}{}{}{}}
+\bibcite{mead1990neuromorphic}{2}
+\bibcite{hasler2013finding}{3}
+\bibcite{schemmel2010wafer}{4}
+\bibcite{shafiee2016isaac}{5}
+\bibcite{davies2018loihi}{6}
+\bibcite{merolla2014truenorth}{7}
+\bibcite{furber2014spinnaker}{8}
+\bibcite{benjamin2014neurogrid}{9}
+\bibcite{indiveri2015neuromorphic}{10}
+\bibcite{roy2019towards}{11}
+\bibcite{chua1971memristor}{12}
+\bibcite{strukov2008missing}{13}
+\bibcite{prezioso2015training}{14}
+\bibcite{yao2020fully}{15}
+\bibcite{shen2017deep}{16}
+\bibcite{wetzstein2020inference}{17}
+\bibcite{feldmann2021parallel}{18}
+\bibcite{xu2021optical}{19}
+\bibcite{arute2019quantum}{20}
+\bibcite{preskill2018quantum}{21}
+\bibcite{mcclean2016theory}{22}
+\bibcite{cerezo2021variational}{23}
+\bibcite{johnson2011quantum}{24}
+\bibcite{venkataramani2015approximate}{25}
+\bibcite{mittal2016survey}{26}
+\bibcite{han2013approximate}{27}
+\bibcite{sampson2011enerj}{28}
+\bibcite{esmaeilzadeh2012neural}{29}
+\bibcite{gaines1969stochastic}{30}
+\bibcite{alaghi2013survey}{31}
+\bibcite{yuan2016high}{32}
+\bibcite{chen2021codex}{33}
+\bibcite{li2022competition}{34}
+\bibcite{roziere2023code}{35}
+\bibcite{austin2021program}{36}
+\bibcite{scholak2021picard}{37}
+\bibcite{poesia2022synchromesh}{38}
+\bibcite{beurer2023guiding}{39}
+\bibcite{hutter2019automated}{40}
+\bibcite{cai2019once}{41}
+\bibcite{white2021neural}{42}
+\bibcite{dahiya2010tactile}{43}
+\bibcite{lee2020soft}{44}
+\bibcite{sundaram2019learning}{45}
+\bibcite{aho2006compilers}{46}
+\bibcite{lattner2004llvm}{47}
+\bibcite{wolf2012computers}{48}
+\bibcite{lee2017embedded}{49}
+\gdef \@abspage@last{18}

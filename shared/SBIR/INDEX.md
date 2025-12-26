@@ -48,6 +48,17 @@
 | [about_embino.md](./about_embino.md) | Project overview |
 | [PAPER.md](./PAPER.md) | Background for arXiv paper draft |
 
+### Intellectual Property (IP/)
+
+| Asset | Type | Status |
+|-------|------|--------|
+| [IP/patents/embino_gcslm/](./IP/patents/embino_gcslm/) | Patent | Filed (Provisional) |
+| [IP/patents/hybrid_compute_optimization/](./IP/patents/hybrid_compute_optimization/) | Patent | Draft |
+| [IP/papers/gcslm_constrained_generation/](./IP/papers/gcslm_constrained_generation/) | Paper | Submitted |
+| [IP/papers/distributed_neuron_optimization/](./IP/papers/distributed_neuron_optimization/) | Paper | Outline |
+
+See [IP/README.md](./IP/README.md) for full portfolio overview.
+
 ### Drafts
 
 | File | Status |

@@ -8,9 +8,20 @@
 | Field | Value |
 |-------|-------|
 | **Application Type** | Provisional Application for Patent |
-| **Title of Invention** | Systems and Methods for Grammar-Constrained Code Generation and Execution on Resource-Limited Embedded Devices |
-| **Attorney Docket Number** | KK-2025-PROV-001 |
+| **Title of Invention** | Systems and Methods for Closed-Loop Optimization of Hybrid and Under-Specified Compute Architectures with Language Model-Driven Search Space Shaping |
+| **Attorney Docket Number** | KK-2025-PROV-002 |
 | **Express Mail Label No.** | N/A (Electronic Filing) |
+
+---
+
+## PRIORITY CLAIM
+
+| Field | Value |
+|-------|-------|
+| **Prior Application No.** | 63/927,859 |
+| **Prior Application Filing Date** | November 30, 2025 |
+| **Prior Application Title** | Systems and Methods for Grammar-Constrained Code Generation and Execution on Resource-Limited Embedded Devices |
+| **Priority Claim Type** | Claims benefit under 35 U.S.C. §119(e) |
 
 ---
 
@@ -64,9 +75,9 @@
 
 | Document | Pages | Included |
 |----------|-------|----------|
-| Specification | ~12 | ☑ |
-| Claims (informal/claim-like language) | ~3 | ☑ |
-| Drawings (5 figures) | 5 | ☑ |
+| Specification | ~15 | ☑ |
+| Claims (informal/claim-like language) | ~6 | ☑ |
+| Drawings (6 figures) | 6 | ☑ |
 | Cover Sheet (this document) | 1 | ☑ |
 | Application Data Sheet (ADS) | — | ☐ Optional for provisional |
 
@@ -119,9 +130,10 @@ This provisional application is being filed by the inventor(s) named above. The 
 - No claims required, but claim-like language strengthens priority support
 - 12-month pendency — must file non-provisional to proceed to examination
 - SBIR/STTR: Filing provisional before Phase I award demonstrates IP ownership
+- This application extends and builds upon KK-2025-PROV-001 (GC-SLM patent)
 
 ---
 
 *Generated: December 2025*
-*Docket: KK-2025-PROV-001*
+*Docket: KK-2025-PROV-002*
 

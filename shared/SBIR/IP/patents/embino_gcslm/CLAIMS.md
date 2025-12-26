@@ -1,4 +1,12 @@
-CLAIMS
+# CLAIMS
+
+**U.S. Provisional Application No.:** 63/927,859  
+**Filing Date:** November 30, 2025  
+**Title:** Systems and Methods for Grammar-Constrained Code Generation and Execution on Resource-Limited Embedded Devices  
+**Applicant:** Kernel Keys LLC  
+**Inventor:** Haim David Silver  
+
+---
 
 What is claimed is:
 
