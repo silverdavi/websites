@@ -1,6 +1,6 @@
 # Website Projects — Status & Ideation
 
-*Last updated: 2025-12-19*
+*Last updated: 2025-12-27*
 
 ---
 
@@ -15,6 +15,7 @@
 | vax.ninja | ✅ Live | Dark/retro | #FF6B9D pink |
 | freshsilver.net | ✅ Live | Light/fresh | #0EA5E9 sky blue |
 | theinvariant.org | 🚧 New | Light/vintage | #8B4513 saddle brown |
+| remiza.network | 🚧 Planning | Dark/War Room | #00FF41 matrix green |
 
 ---
 
@@ -116,6 +117,22 @@ jobs:
 | `shared/some_info/resume-flat-reichman.tex` | CV LaTeX source |
 | `shared/ABOUT.md` | Design tokens per site |
 
+### SBIR / Intellectual Property
+| Folder | Status | Description |
+|--------|--------|-------------|
+| `shared/SBIR/IP/patents/embino_gcslm/` | ✅ Filed | Provisional 63/927,859 (Nov 30, 2025) — Grammar-Constrained SLM + Micro-VM |
+| `shared/SBIR/IP/patents/hybrid_compute_optimization/` | 📝 Ready | Non-provisional — HIL optimization of under-specified compute + ANN-nodes |
+| `shared/SBIR/IP/papers/distributed_neuron_optimization/` | 📝 Draft | Position paper on programming under-specified compute |
+| `shared/theinvariant/` | 🚧 New | Ideas magazine |
+| `remiza-net-site/` | 🚧 Planning | Home network monitor (MikroTik + Deco) |
+
+**Patent Filing Package (hybrid_compute_optimization):**
+- `SPECIFICATION.pdf/.docx` — 30+ page spec with Related Work, Advantages Over Prior Art
+- `CLAIMS.pdf/.docx` — 30 claims (4 independent, 26 dependent) — Track One compliant
+- `DRAWINGS.pdf` — 6 USPTO-compliant figures
+- `PRIOR_ART_REPORT.pdf` — 17 patent refs + 13 NPL refs with distinction analysis
+- `IDS_REFERENCES.pdf` — Form PTO/SB/08 format for examiner
+
 ### Design Tokens by Site
 
 | Site | Background | Text | Accent | Heading Font | Body Font |
@@ -123,10 +140,12 @@ jobs:
 | unpop.info | #FFFEF5 | #1A1A1A | #C84B31 | Literata | Source Serif 4 |
 | dhsilver.me | #0D0D0D | #E8E8E8 | #F4A261 | Bricolage Grotesque | Geist |
 | kernel-keys.com | #1A1616 | #FDFBF7 | #D4A574 | Clash Display | Satoshi |
+| kernel-keys.com/catalysts | #0A0908 | #FAFAF8 | #E5A823 | Instrument Serif | Newsreader |
 | embino.com | #0C0C0C | #33FF33 | #FF6B35 | IBM Plex Sans | IBM Plex Mono |
 | vax.ninja | #1a0a2e | #E8E8E8 | #FF6B9D | Press Start 2P | VT323 |
 | freshsilver.net | #F8FAFC | #1E293B | #0EA5E9 | Space Grotesk | Inter |
 | theinvariant.org | #FDFBF7 | #2C2416 | #8B4513 | Playfair Display | Source Sans 3 |
+| remiza.network | #050505 | #00FF41 | #00FF41 | JetBrains Mono | Inter |
 
 ---
 
@@ -249,6 +268,34 @@ Sub-pages for the Floweer screensaver app (Apple TV, iPhone, iPad):
 - `floweer/03_Network.png` — Screenshot of Network mode
 - `floweer/04_Animals.png` — Screenshot of Animals mode
 
+### Catalysts of Change Page
+Interactive flashcard experience featuring 150 revolutionary figures:
+- `/catalysts` — 3D carousel with flippable cards
+
+**Design:**
+- Distinct from main site — editorial/activist aesthetic
+- Fonts: Instrument Serif (headers), Newsreader (body) — inky, printed feel
+- Gemini-generated paper textures for card surfaces
+- Realistic card effects: shadows, grain, vignette, inner borders
+- Category system: 13 broad categories (Liberation, Justice, Revolution, Workers, Gender, Indigenous, Palestine, Peace, Environment, Digital, Anarchism, Theory, Democracy)
+
+**Features:**
+- Searchable and filterable by category
+- Keyboard navigation (← → to navigate, Space to flip)
+- Each card shows: name, era, bio, quote, categories
+- Card back: Gemini-generated ink illustration, key work, details, Wikipedia link
+- Mobile: Full-screen flipbook (single card, swipe navigation)
+- Performance optimized: Only renders 5 cards at a time
+
+**Assets:**
+- `textures/card_front_texture.png` — Gemini-generated cream paper texture
+- `textures/card_back_texture.png` — Gemini-generated dark charcoal texture
+- `catalysts/*.png` — 150 Gemini-generated ink illustrations (1:1 aspect ratio)
+- `catalysts/*.json` — Prompt metadata for each illustration
+
+**Data:**
+- `public/catalysts.csv` — 150 entries with name, era, focus, keyWork, quote, source, bio, tags, details, Wikipedia URL
+
 ### TODO / Ideas
 - [x] Modern dark theme redesign
 - [x] Glassmorphism UI
@@ -256,6 +303,9 @@ Sub-pages for the Floweer screensaver app (Apple TV, iPhone, iPad):
 - [x] Book cover cards section
 - [x] Floweer app marketing page
 - [x] Floweer app support page
+- [x] Catalysts flashcard page
+- [x] Gemini-generated card textures
+- [x] Mobile full-screen flipbook
 - [ ] Add case study cards with metrics
 - [ ] Newsletter signup
 
@@ -418,3 +468,31 @@ A magazine exploring "constants amidst chaos" — science, philosophy, culture. 
 - [ ] Scaffold Next.js project
 - [ ] Setup Sanity studio
 - [ ] Setup Vercel + DNS
+
+---
+
+## remiza.network — Next-Gen Network Monitor
+
+**Status:** 🚧 PLANNING  
+**URL:** https://remiza.network (TBD)  
+**Repo:** [silverdavi/remiza-net-site](https://github.com/silverdavi/remiza-net-site)
+
+### Concept
+A sophisticated project that turns a home network into a managed enterprise-grade environment. Monitors MikroTik RB5009 (Brain) and TP-Link Deco mesh units (Limbs).
+
+### Architecture (Pulse-Brain-Vision)
+1. **The Pulse (C++):** High-frequency polling via raw sockets for ultra-low overhead.
+2. **The Brain (Python):** Logic, MikroTik API integration, and historical data (DuckDB/SQLite).
+3. **The Vision (Next.js):** Real-time "War Room" dashboard with WebSockets.
+
+### Design
+- Dark, "War Room" aesthetic.
+- Colors: Matrix green (#00FF41), Status colors (Green/Yellow/Red).
+- Real-time latency heatmaps and failover logs.
+
+### TODO
+- [ ] Implement C++ Pulse daemon
+- [ ] Setup Python Brain with MikroTik API integration
+- [ ] Scaffold Next.js Vision dashboard
+- [ ] Implement WebSocket stream for real-time updates
+- [ ] Configure local/remote mirror logic
