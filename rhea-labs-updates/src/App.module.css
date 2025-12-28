@@ -1,0 +1,34 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   RHEA LABS UPDATES — App Styles
+   Placeholder - ready for your design direction
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
